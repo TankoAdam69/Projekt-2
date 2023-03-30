@@ -1,8 +1,14 @@
 @font-face {
     font-family: Samsung;
     src: url(fonts/SamsungSans-Regular.ttf);
+    
 }
 
 *{
     font-family: Samsung;
+    
+}
+
+a{
+    color: black;
 }
