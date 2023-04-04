@@ -10,6 +10,7 @@
 }
 
 a{
+<<<<<<< HEAD
     color: black;
 }
 
@@ -27,3 +28,15 @@ a{
     font-size: 11px;
 }
 
+=======
+    color: black !important;
+}
+
+.carousel-control-prev-icon.bg-dark{
+    border-radius: 10px;
+}
+
+.carousel-control-next-icon.bg-dark{
+    border-radius: 10px;
+}
+>>>>>>> 01b5c1f3e46f35a085fa831673f5c4e0ef5a5d66
