@@ -12,3 +12,18 @@
 a{
     color: black;
 }
+
+.carousel-caption {
+    color: black;
+    padding-bottom: 125px;
+    padding-right: 300px;
+}
+
+.carousel-caption h5 {
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 11px;
+}
+
