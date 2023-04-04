@@ -10,5 +10,13 @@
 }
 
 a{
-    color: black;
+    color: black !important;
+}
+
+.carousel-control-prev-icon.bg-dark{
+    border-radius: 10px;
+}
+
+.carousel-control-next-icon.bg-dark{
+    border-radius: 10px;
 }
