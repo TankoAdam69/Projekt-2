@@ -9,11 +9,6 @@
     
 }
 
-a{
-<<<<<<< HEAD
-    color: black;
-}
-
 .carousel-caption {
     color: black;
     padding-bottom: 125px;
@@ -28,7 +23,7 @@ a{
     font-size: 11px;
 }
 
-=======
+a{
     color: black !important;
 }
 
