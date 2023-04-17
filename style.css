@@ -1,7 +1,7 @@
 @font-face {
     font-family: Samsung;
     src: url(fonts/SamsungSans-Regular.ttf);
-    
+    src: url(fonts/samsungSans-medium.ttf);
 }
 
 *{
@@ -83,3 +83,6 @@ a{
     }
 }
 
+.samsungmedium{
+    font-family: Samsung;
+}
