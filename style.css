@@ -86,3 +86,15 @@ a{
 .samsungmedium{
     font-family: Samsung;
 }
+
+
+th {
+    padding: 16px;
+    text-align: center;
+}
+
+table {
+    border-radius: 50px;
+}
+
+
