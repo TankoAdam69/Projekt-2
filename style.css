@@ -87,6 +87,7 @@ a{
     font-family: Samsung;
 }
 
+<<<<<<< HEAD
 #mobile_h1 {
     text-align: center !important;
     color: black;
@@ -156,3 +157,16 @@ a{
     background-color: white;
     height: 50px;
   }
+=======
+
+th {
+    padding: 16px;
+    text-align: center;
+}
+
+table {
+    border-radius: 50px;
+}
+
+
+>>>>>>> 7c9e8ae73721e8a691341df212204652fdef760c
