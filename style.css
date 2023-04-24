@@ -80,7 +80,12 @@ a{
     .c1 img{
         height: 40rem;
         margin-left: -30rem;
+        margin-right: -20px;
         width: 60rem !important;
+    }
+    .c1 .carousel-caption{
+        padding-bottom: 410px !important;
+        padding-right: 180px !important;
     }
     .c2 img{
         height: 40rem;
@@ -93,7 +98,7 @@ a{
     }
     .c3 img{
         height: 40rem;
-        margin-left: -2rem;
+        margin-left: -28rem;
         width: 60rem !important;
     }
     .c3 .carousel-caption{
@@ -121,21 +126,48 @@ a{
     .carousel h5{
         font-size: 20px;
     }
+    .card h5{
+        font-size: 1px;
+    }
+    .card a{
+        margin-left: 0px !important;
+    }
+    .card .cr1{
+        margin-left: 30px !important;
+        font-size: 15px;
+    }
+    .cr{
+        margin-left:6px;
+    }
+    .card a{
+        font-size:10px;
+    }
+    .btn{
+        padding: 5px;
+    }
 }
 
 .samsungmedium{
     font-family: Samsung;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a7c3622d70b008bee5026ef3565a01a3de289e86
 .karuzel-kepson1{
     position:absolute;
     top: 20%;
     left: 10%;
+<<<<<<< HEAD
     font-size: 2rem;
     font-weight: bold;
     
        
+=======
+    font-size: 1.25rem;
+    font-weight: bold;  
+>>>>>>> a7c3622d70b008bee5026ef3565a01a3de289e86
 }
 
 .karuzel-kepson2{
@@ -167,7 +199,10 @@ a{
     margin-bottom: 25px;
     font-size: 50px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a7c3622d70b008bee5026ef3565a01a3de289e86
 
 #mobile_p {
     background-color: beige;
@@ -241,6 +276,7 @@ a{
 .card {
     border-radius: 70px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .card h5{
@@ -260,6 +296,9 @@ a{
     background-color: #000000c0;
 }
 
+<<<<<<< HEAD
 .Mónika{
     margin-top: -100px;
 }
+=======
+>>>>>>> a7c3622d70b008bee5026ef3565a01a3de289e86
