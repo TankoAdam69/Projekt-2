@@ -1,6 +1,5 @@
 @font-face {
     font-family: Samsung;
-    src: url(fonts/SamsungSans-Regular.ttf);
     src: url(fonts/samsungSans-Medium.ttf);
 }
 
@@ -151,23 +150,12 @@ a{
     font-family: Samsung;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> a7c3622d70b008bee5026ef3565a01a3de289e86
 .karuzel-kepson1{
     position:absolute;
     top: 20%;
     left: 10%;
-<<<<<<< HEAD
     font-size: 2rem;
-    font-weight: bold;
-    
-       
-=======
-    font-size: 1.25rem;
     font-weight: bold;  
->>>>>>> a7c3622d70b008bee5026ef3565a01a3de289e86
 }
 
 .karuzel-kepson2{
@@ -183,7 +171,7 @@ a{
 .karuzel-kepson3{
     position:absolute;
     top: 20%;
-    left: 10%;
+    left: 6%;
     font-size: 1.25rem;
     font-weight: bold;
     
@@ -199,10 +187,6 @@ a{
     margin-bottom: 25px;
     font-size: 50px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> a7c3622d70b008bee5026ef3565a01a3de289e86
 
 #mobile_p {
     background-color: beige;
@@ -296,9 +280,6 @@ a{
     background-color: #000000c0;
 }
 
-<<<<<<< HEAD
 .Mónika{
     margin-top: -100px;
 }
-=======
->>>>>>> a7c3622d70b008bee5026ef3565a01a3de289e86
