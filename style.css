@@ -260,24 +260,62 @@ a{
 
 .card {
     border-radius: 70px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0px;
 }
 
-.card h5{
-    text-align: center;
+.card img{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
-
-.card a{
-    margin-left: 94px;
-}
-
-.card .cr1{
-    margin-left: 260px;
-}
-
 
 .card a:hover{
     background-color: #000000c0;
 }
 
+nav button{
+    padding: auto;
+}
+
+.tab-content img{
+    width: 40rem;
+    height: 20rem;
+    border-radius: 15px;
+}
+
+.tab-content a{
+    text-decoration: none;
+}
+
+ul li{
+    margin: auto;
+}
+
+h1{
+    padding-top: 5rem;
+}
+
+.nav-item button{
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+  
+.nav-item button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.nav-item button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
