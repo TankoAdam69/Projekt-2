@@ -390,3 +390,35 @@ h1{
     padding-bottom: 50px;
     padding-top: -10px;
 }
+
+#monitorok_fo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#monitorok_h1 {
+    text-align: center !important;
+    color: black;
+    cursor: default;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+#monitorok_p {
+    background-color: grey;
+    color: black;
+    text-align: justify;
+    border: solid 15px grey;
+    border-radius: 15px;
+}
+
+#monitorok_h1_belso {
+    text-align: start !important;
+    color: black;
+    cursor: default;
+    font-weight: bold;
+}
