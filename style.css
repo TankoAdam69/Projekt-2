@@ -295,6 +295,7 @@ h1{
     padding-top: 5rem;
 }
 
+
 .nav-item button{
     display: inline-block;
     position: relative;
@@ -309,7 +310,7 @@ h1{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #0087ca;
+    background-color: black;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -321,4 +322,71 @@ h1{
 
 .Mónika{
     margin-top: -100px;
+}
+
+.gl1 {
+    background-color: black;
+}
+
+.f1 .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+  
+.left {
+    position: absolute;
+    bottom: 80px;
+    left: 200px;
+    margin-right: 600px;
+}
+
+.right{
+    position: absolute;
+    bottom: 80px;
+    right: 200px; 
+    margin-left: 600px;
+}
+
+.gl2 a{
+    display: inline-block;
+    position: relative;
+    color: white !important;
+    text-decoration: none;
+}
+  
+.gl2 a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 15px;
+    left: 8px;
+    background-color: white;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+  
+.gl2 a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.gl3 h1 {
+    margin-top: -50px;
+    font-size: 60px;
+}
+
+.gl3 p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.f2{
+    border-radius: 10px;
+    margin-top: 60px;
+    background-color: darkgrey;
+    padding-bottom: 50px;
+    padding-top: -10px;
 }
