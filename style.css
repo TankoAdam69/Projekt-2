@@ -1,6 +1,6 @@
 @font-face {
     font-family: Samsung;
-    src: url(fonts/samsungSans-Medium.ttf);
+    src: url(fonts/SamsungSans-Medium.ttf);
 }
 
 *{
@@ -161,7 +161,7 @@ a{
 
 .karuzel-kepson1{
     position:absolute;
-    top: 20%;
+    top: 50%;
     left: 10%;
     font-size: 2rem;
     font-weight: bold;  
