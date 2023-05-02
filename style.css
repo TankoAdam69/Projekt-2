@@ -1,6 +1,6 @@
 @font-face {
     font-family: Samsung;
-    src: url(fonts/samsungSans-Medium.ttf);
+    src: url(fonts/SamsungSans-Medium.ttf);
 }
 
 *{
@@ -56,6 +56,7 @@ a{
         height: 20px;
         width: 20px;
         border-radius: 8px;
+        margin-left: 15px !important;
     }
     .carousel-control-next-icon.bg-dark{
         height: 20px;
@@ -119,7 +120,7 @@ a{
     }
     .carousel {
         margin-left: -30px;
-        margin-right: -40px;
+        margin-right: -10px !important;
         height: 40rem; 
     }
     .carousel h5{
@@ -144,6 +145,14 @@ a{
     .btn{
         padding: 5px;
     }
+    .tab-content img{
+        width: 330px !important;
+        height: 200px !important;
+    }
+    .float-end img{
+        width: 500px !important;
+        padding: auto;
+    }
 }
 
 .samsungmedium{
@@ -152,7 +161,7 @@ a{
 
 .karuzel-kepson1{
     position:absolute;
-    top: 20%;
+    top: 50%;
     left: 10%;
     font-size: 2rem;
     font-weight: bold;  
@@ -421,4 +430,75 @@ h1{
     color: black;
     cursor: default;
     font-weight: bold;
+}
+
+<<<<<<< HEAD
+.button_galaxyz {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 360px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    top: 50%;
+}
+
+.button_galaxyz {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+  
+  .button_galaxyz:hover {
+    background-color: black;
+    color: white;
+  }
+
+.galaxyz_szvg {
+    text-align: center !important;
+    text-align: justify;
+}
+
+.galaxyzvideo {
+    width: 20% !important;
+    margin: 15px;
+}
+
+.button_carousel {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button_carousel {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+
+  .button_carousel:hover {
+    background-color: black;
+    color: white;
+  }
+=======
+<<<<<<< HEAD
+.inches{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table tr td{
+    padding-left: 10px;
+    padding-right: 10px;
 }
