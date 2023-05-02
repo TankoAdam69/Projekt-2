@@ -422,3 +422,13 @@ h1{
     cursor: default;
     font-weight: bold;
 }
+
+.inches{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table tr td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
