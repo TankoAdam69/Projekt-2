@@ -422,3 +422,62 @@ h1{
     cursor: default;
     font-weight: bold;
 }
+
+.button_galaxyz {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 360px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    top: 50%;
+}
+
+.button_galaxyz {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+  
+  .button_galaxyz:hover {
+    background-color: black;
+    color: white;
+  }
+
+.galaxyz_szvg {
+    text-align: center !important;
+    text-align: justify;
+}
+
+.galaxyzvideo {
+    width: 20% !important;
+    margin: 15px;
+}
+
+.button_carousel {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button_carousel {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+
+  .button_carousel:hover {
+    background-color: black;
+    color: white;
+  }

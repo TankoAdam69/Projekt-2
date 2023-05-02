@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="files/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="playvideo()">
     <nav class="navbar navbar-expand-lg samsungmedium">
         <div class="container d-block text-center">
             <a href="." class="navbar-brand">
@@ -45,7 +45,13 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="files/photos/mobile_2.jpg" class="d-block w-100 mobileimg">
+                        <div>
+                            <img src="files/photos/mobile_2.jpg" class="d-block w-100 mobileimg">
+                            <div style="position: absolute; z-index: 10; top:0; left: 10%;background-color: yellow;">
+                                <h1>Galaxy Z Fold 4</h1>   
+                                <a  href="#" class="btn btn-primary button_galaxyz">Megnézem</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="files/photos/mobile_3.jpg" class="d-block w-100 mobileimg">
@@ -66,9 +72,10 @@
 
     <div class="mobile_tartalom_1 container">
         <h1 id="mobile_h1">
-            Újdonságok
+            Samsung S széria új telefonja:
         </h1>
         <div id="mobile_p" class="row">
+            <h1 id="monitorok_h1_belso">Samsung S23 | S23+</h1>
             <img class="mobile_img col-4 col-md-4 col-sm-4 col-xs-4" src="files/photos/galaxy_s23.avif" alt="Samsung galaxy s23 | s23+" title="Samsung galaxy s23 | s23+">
             <div class="col-8 col-md-8 col-sm-8 col-xs-8">
                 <h2 class="vigyel">Vigyél fényt az éjszakába!</h2>
@@ -80,9 +87,26 @@
                 </a>
             </div>
         </div>
+        <div id="csik"></div>
+        <h1 id="galaxyzfold mobile_h1">
+            Galaxy Z széria
+        </h1>
+        <div id="mobile_p" class="row">
+            <div class="col-8 col-md-8 col-sm-8 col-xs-8">
+                <h2 class="vigyel">Galaxy Z Fold 4</h2>
+                <p class="galaxyz_szvg">
+                    Válts munkáról pihenésre és fordítva pillanatok alatt!
+                </p>
+                <a href="galaxyz.html">
+                    <button class="button_galaxyz">Bővebben</button>
+                </a>
+            </div>
+            <video src="files/photos/galaxyz.mp4" id="videoz" muted class="d-block w-100 galaxyzvideo">
+        </div>
     </div>
     
-<script src="script.js"></script>
+<script src="script.js">
+</script>
 <script src="files/bootstrap.bundle.min.js"></script>
 </body>
 </html>
