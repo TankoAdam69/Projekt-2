@@ -56,6 +56,7 @@ a{
         height: 20px;
         width: 20px;
         border-radius: 8px;
+        margin-left: 15px !important;
     }
     .carousel-control-next-icon.bg-dark{
         height: 20px;
@@ -119,7 +120,7 @@ a{
     }
     .carousel {
         margin-left: -30px;
-        margin-right: -40px;
+        margin-right: -10px !important;
         height: 40rem; 
     }
     .carousel h5{
@@ -143,6 +144,14 @@ a{
     }
     .btn{
         padding: 5px;
+    }
+    .tab-content img{
+        width: 330px !important;
+        height: 200px !important;
+    }
+    .float-end img{
+        width: 500px !important;
+        padding: auto;
     }
 }
 
@@ -422,3 +431,4 @@ h1{
     cursor: default;
     font-weight: bold;
 }
+
