@@ -549,3 +549,17 @@ table tr td{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.mobile_gomb {
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+}
+
+.carousel_felirat {
+    text-align: center;
+}
+
+.galaxyzflipvideo {
+    width: 15% !important;
+}
