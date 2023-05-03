@@ -432,7 +432,6 @@ h1{
     font-weight: bold;
 }
 
-<<<<<<< HEAD
 .button_galaxyz {
     border: none;
     color: white;
@@ -491,8 +490,7 @@ h1{
     background-color: black;
     color: white;
   }
-=======
-<<<<<<< HEAD
+
 .inches{
     padding-left: 10px;
     padding-right: 10px;
@@ -501,4 +499,20 @@ h1{
 table tr td{
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.ár{
+    padding-top: 80px !important;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    
+
+}
+
+.több{
+    height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
 }
