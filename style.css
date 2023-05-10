@@ -550,7 +550,6 @@ table tr td{
     padding-right: 10px;
 }
 
-<<<<<<< HEAD
 .ár{
     padding-top: 80px !important;
     padding-left: 20px;
@@ -565,18 +564,22 @@ table tr td{
     width: 200px;
     border-radius: 30px;
     text-align: center;
-=======
-.mobile_gomb {
-    position: absolute;
-    z-index: 10;
-    top: 100px;
 }
 
-.carousel_felirat {
+.okostelefonfo {
+    background-color: gray;
+}
+
+.foszvg {
     text-align: center;
 }
 
-.galaxyzflipvideo {
-    width: 15% !important;
->>>>>>> 55d65fab6eb821dad77eeb16d132c1514e364a03
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
 }
