@@ -574,7 +574,7 @@ table tr td{
     text-align: center;
 }
 
-.c-item {
+/* .c-item {
     height: 480px;
 }
 
@@ -582,10 +582,10 @@ table tr td{
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
-}
+} */
 
 .okostelefonokkiskep {
-    width: 50% !important;
+    width: 300px !important;
     border-radius: 15px;
     display: block;
     margin-left: auto;
@@ -618,4 +618,8 @@ table tr td{
 
 .gyaricim {
 
+}
+
+.hatter {
+    background-color: gray;
 }
