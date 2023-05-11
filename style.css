@@ -583,3 +583,39 @@ table tr td{
     object-fit: cover;
     filter: brightness(0.6);
 }
+
+.okostelefonokkiskep {
+    width: 50% !important;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    transition: 1s;
+}
+
+.okostelefonokkiskep:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.adatok {
+    text-decoration: underline;
+    font-weight: bold !important;
+    font-size: 20px !important;
+}
+
+.focim {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ujcim {
+    text-align: center;
+}
+
+.gyaricim {
+
+}
