@@ -637,23 +637,19 @@ table tr td{
     text-align: center;
 }
 
-.okostelefonfo {
-    background-color: gray;
-}
-
 .foszvg {
     text-align: center;
 }
 
-/* .c-item {
+ .c-item {
     height: 480px;
-}
+} 
 
 .c-img {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
-} */
+}
 
 .okostelefonokkiskep {
     width: 300px !important;
