@@ -718,3 +718,40 @@ table tr td{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.field-holder{
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+.field-holder input{
+    border: 0;
+    border-bottom: 3px solid #dfdfdf;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+.field-holder label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    cursor: text;
+    transition: .3s ease-in-out;
+}
+.field-holder label, input{
+    font-size: 1em;
+    width: 90%;
+    height: 55px;
+}
+.field-holder input:focus + label,
+.field-holder input:valid + label{
+    color: #424242;
+    font-size: .75rem;
+    top: -25px;
+    pointer-events: none;
+}
+.field-holder input:focus
+.field-holder input:valid{
+    border-bottom: 3px solid #424242;
+}
