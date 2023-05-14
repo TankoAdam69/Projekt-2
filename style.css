@@ -129,13 +129,10 @@
         font-size: 20px;
     }
     .card h5{
-        font-size: 1px;
-    }
-    .card a{
-        margin-left: 0px !important;
+        font-size: 15px;
     }
     .card .cr1{
-        margin-left: 30px !important;
+        margin: auto;
         font-size: 15px;
     }
     .cr{
@@ -196,12 +193,24 @@
         margin-left: -90px !important;
         padding-bottom: -100px !important;
     }
-    .hgt1 img{
+    .hg1 p{
+        font-size: 13px
+    }
+    .hg1 img{
         margin-left: -80px;
     }
-    .hgt1 #sc1{
-        margin-right: 100px !important;
-        padding-right: 100px !important;
+    .hg1 li{
+        font-size: 12px;
+    }
+    .hg1 .hgt2{
+        margin-bottom: 20px;
+    }
+    .hg1 .ár{
+        margin-top: -60px !important;
+    }
+    .hg1 .hgt3 img{
+        width: 200px !important;
+        margin-left: 0px;
     }
 }
 
@@ -249,9 +258,23 @@
         margin-left: -70px;
         margin-bottom: -50px;
     }
+    .hg1 p{
+        font-size: 13px
+    }
+    .hg1 li{
+        font-size: 12px;
+    }
+    .hg1 .hgt2{
+        margin-bottom: 20px;
+    }
+    .hg1 .ár{
+        margin-top: -60px !important;
+    }
 }
 
-
+.ca1{
+    margin: 22px 0 !important;
+}
 .samsungmedium{
     font-family: Samsung;
 }
@@ -692,15 +715,39 @@ table tr td{
     transform-origin: bottom left;
 }
 
-.text-shadow {
-    text-shadow: 2px 2px #000;
+.field-holder{
+    position: relative;
+    margin-bottom: 1.25rem;
 }
-
-.kozepre {
-    text-align: center;
+.field-holder input{
+    border: 0;
+    border-bottom: 3px solid #dfdfdf;
+    outline: none;
+    transition: .3s ease-in-out;
 }
-
-.szeria {
-    font-size: 70px;
-    margin-bottom: 30px;
+.field-holder label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    cursor: text;
+    transition: .3s ease-in-out;
+}
+.field-holder label, input{
+    font-size: 1em;
+    width: 90%;
+    height: 55px;
+}
+.field-holder input:focus + label,
+.field-holder input:valid + label{
+    color: #424242;
+    font-size: .75rem;
+    top: -25px;
+    pointer-events: none;
+}
+.field-holder input:focus
+.field-holder input:valid{
+    border-bottom: 3px solid #424242;
 }

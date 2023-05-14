@@ -37,12 +37,73 @@
                 <li class="nav-item">
                     <a class="nav-link" href="tartozekok.html">Tartozékok</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ugyfel.html">Ügyfélszolgálat</a>
                 </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Kapcsolatfelvétel
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ügyfélszolgálat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="form">
+                            <form action="post">
+                                <div class="float-start">
+                                    <input class="ms-3 me-3 mb-3" type="text" placeholder="Vezetéknév">
+                                    <input class="ms-3 me-3 mb-3" type="text" placeholder="Keresztnév">
+                                </div>
+                                
+                                <div class="float-start pb-4">
+                                    <input type="email" placeholder="E-mail" class="ms-3 me-3">
+
+                                    <input type="phone" placeholder="Telefon" class="ms-3 me-3">
+                                </div>
+                                <p>Termékérdeklődés:</p>
+                                <div class="row ps-5">
+                                    <div class="col-6">
+                                        <input type="radio" id="mobil" name="fav_language" value="mobil">
+                                        <label for="mobil">Mobil</label>
+                                        <br>
+                                        <input type="radio" id="kijelzo" name="fav_language" value="kijelzo">
+                                        <label for="kijelzo">Kijelzők</label>
+                                        <br>
+                                        <input type="radio" id="klima" name="fav_language" value="klima">
+                                        <label for="klima">Klíma</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="radio" id="szamitastechnika" name="fav_language" value="szamitastechnika">
+                                        <label for="szamitastechnika">Számítástechnika</label>
+                                        <br>
+                                        <input type="radio" id="haztartasigep" name="fav_language" value="haztartasigep">
+                                        <label for="haztartasigep">Háztartási gépek</label>
+                                        <br>
+                                        <input type="radio" id="memoria" name="fav_language" value="memoria">
+                                        <label for="memoria">Memória</label>
+                                    </div>
+                                </div>
+                                <div class="float-start pt-4">
+                                    <input class="ms-3 me-3 mb-3" type="text" placeholder="Város">
+                                    <input class="ms-3 me-3 mb-3" type="number" placeholder="Irányítószám">
+                                </div>
+                                <div class="ps-4">
+                                    <textarea cols="46" rows="5" placeholder="Üzenet"></textarea>
+                                </div>
+                            </form>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="s"  onclick="myFunction()">Jóváhagyás</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
-      </nav>
+    </nav>
     <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
@@ -102,7 +163,7 @@
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                 <div class="container">
                     <div class="row border" style="border-radius: 50px;">
-                        <div class="col-lg-4 col-sm-6 hgt1">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-homea" role="tabpanel" aria-labelledby="pills-homea-tab" tabindex="0">
                                     <a href="https://www.samsung.com/hu/refrigerators/bottom-mount-freezer/rb7300t-defeature-344l-white-rb33b610fww-ef/"><img src="files/photos/haztartas2_7.avif"></a>
@@ -118,7 +179,7 @@
                             <p>Szín:</p>
                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active border" id="pills-homea-tab sc1" data-bs-toggle="pill" data-bs-target="#pills-homea" type="button" role="tab" aria-controls="pills-homea" aria-selected="true" style="background-color: white;"></button>
+                                    <button class="nav-link active border" id="pills-homea-tab" data-bs-toggle="pill" data-bs-target="#pills-homea" type="button" role="tab" aria-controls="pills-homea" aria-selected="true" style="background-color: white;"></button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-profilea-tab" data-bs-toggle="pill" data-bs-target="#pills-profilea" type="button" role="tab" aria-controls="pills-profilea" aria-selected="false" style="background-color: grey;"></button>
@@ -133,13 +194,13 @@
                         <div class="col-lg-1 col-sm-3"></div>
                         <div class="col-lg-3 col-sm-9">
                             <div class="ár">204.990 Ft</div>
-                        <a href="https://www.samsung.com/hu/refrigerators/bottom-mount-freezer/rb7300t-defeature-344l-white-rb33b610fww-ef/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/refrigerators/bottom-mount-freezer/rb7300t-defeature-344l-white-rb33b610fww-ef/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-h" role="tabpanel" aria-labelledby="pills-h-tab" tabindex="0">
                                     <a href="https://www.samsung.com/hu/refrigerators/bottom-mount-freezer/rb7300t-390l-white-rb38c672cww-ef/"><img src="files/photos/haztartas2_9.webp"></a>
@@ -149,11 +210,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>RB38C672CWW/EF Alulfagyasztós hűtőszekrény Wi-Fi-vel</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active border" id="pills-h-tab" data-bs-toggle="pill" data-bs-target="#pills-h" type="button" role="tab" aria-controls="pills-h" aria-selected="true" style="background-color: white;"></button>
                                 </li>
@@ -167,22 +228,22 @@
                                 <li>Digitális Inverter Technológia</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">242.990 Ft</div>
-                        <a href="https://www.samsung.com/hu/refrigerators/bottom-mount-freezer/rb7300t-390l-white-rb38c672cww-ef/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/refrigerators/bottom-mount-freezer/rb7300t-390l-white-rb38c672cww-ef/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas2_1.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas2_1.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>RB38C7B6BS9/EF BESPOKE Alulfagyasztós hűtőszekrény WiFi-vel</p>
                             <p>Szín:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-profilea-tab" data-bs-toggle="pill" data-bs-target="#pills-profilea" type="button" role="tab" aria-controls="pills-profilea" aria-selected="false" style="background-color: grey;"></button>
                                 </li>
@@ -193,22 +254,22 @@
                                 <li> Nettó magasság zsanérral (mm) : 1780 mm</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">279.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/refrigerators/built-in-bottom-mount-freezer/rb7300t-wifi-390l-silver-rb38c7b6bs9-ef/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/refrigerators/built-in-bottom-mount-freezer/rb7300t-wifi-390l-silver-rb38c7b6bs9-ef/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas2_4.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas2_4.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>RS66A8101S9/EF, RS8000NC-6 Amerikai típusú hűtőszekrény SpaceMax™ Technológiával</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-pro-tab" data-bs-toggle="pill" data-bs-target="#pills-pro" type="button" role="tab" aria-controls="pills-pro" aria-selected="false" style="background-color: grey;"></button>
                                 </li>
@@ -220,22 +281,22 @@
                                 <li>Nettó mélység ajtófogantyúval (mm) : 716 mm</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">367.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/refrigerators/side-by-side/rs8000nc-6-670l-silver-rs66a8101s9-ef/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/refrigerators/side-by-side/rs8000nc-6-670l-silver-rs66a8101s9-ef/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas2_2.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas2_2.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>RF50A5002S9/EO hűtőszekrény francia ajtós kialakítással</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="false" style="background-color: grey;"></button>
                                 </li>
@@ -246,17 +307,17 @@
                                 <li>Nettó mélység ajtófogantyúval (mm) : 715 mm</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">459.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/refrigerators/french-door/rf5000a-431l-silver-rf50a5002s9-eo/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/refrigerators/french-door/rf5000a-431l-silver-rf50a5002s9-eo/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-pr" role="tabpanel" aria-labelledby="pills-pr-tab" tabindex="0">
                                     <img src="files/photos/haztartas2_6.avif">
@@ -266,11 +327,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>RH68B8840B1/EF Side-by-Side hűtőszekrény Food ShowCase ajtóval</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-pr-tab" data-bs-toggle="pill" data-bs-target="#pills-pr" type="button" role="tab" aria-controls="pills-pr" aria-selected="false" style="background-color: black;"></button>
                                 </li>
@@ -284,22 +345,22 @@
                                 <li>Nettó magasság zsanérral (mm) : 1780 mm</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">554.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/refrigerators/side-by-side/rs8000bc-fsr-with-food-showcase-627l-black-rh68b8840b1-ef/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/refrigerators/side-by-side/rs8000bc-fsr-with-food-showcase-627l-black-rh68b8840b1-ef/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas2_3.webp" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas2_3.webp" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>RS6HA8891B1/EF Side-by-Side hűtőszekrény Family Hub™-bal</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="false" style="background-color: black;"></button>
                                 </li>
@@ -309,10 +370,10 @@
                                 <li>TuneIn / Spotify / Amazon Music (zene és rádió)</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">880.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/refrigerators/side-by-side/rs8000nc-side-by-side-refrigerator-with-family-hub-614l-black-rs6ha8891b1-ef/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/refrigerators/side-by-side/rs8000nc-side-by-side-refrigerator-with-family-hub-614l-black-rs6ha8891b1-ef/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
@@ -321,12 +382,12 @@
                 <div class="container">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas3_1.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas3_1.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>WW6300T WW80T634DLXAS6 Elöltöltős mosógép</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-pro-tab" data-bs-toggle="pill" data-bs-target="#pills-pro" type="button" role="tab" aria-controls="pills-pro" aria-selected="false" style="background-color: black;"></button>
                                 </li>
@@ -337,22 +398,22 @@
                                 <li>Mosási kapacitás (kg) : 8.0 kg</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">189.999 Ft</div>
-                        <a href="https://www.samsung.com/hu/washers-and-dryers/washing-machines/ww6300t-front-loading-eco-bubble-ai-control-auto-dispense-8kg-refined-inox-ww80t634dlxas6/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/washers-and-dryers/washing-machines/ww6300t-front-loading-eco-bubble-ai-control-auto-dispense-8kg-refined-inox-ww80t634dlxas6/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas3_2.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas3_2.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>WW8500T (WW80T854ABH/S6) Elöltöltős mosógép</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-pro-tab" data-bs-toggle="pill" data-bs-target="#pills-pro" type="button" role="tab" aria-controls="pills-pro" aria-selected="false" style="background-color: white;"></button>
                                 </li>
@@ -364,22 +425,22 @@
                                 <li>Mosási kapacitás (kg) : 8.0 kg</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">194.909 Ft</div>
-                        <a href="https://www.samsung.com/hu/washers-and-dryers/washing-machines/ww8500t-front-loading-eco-bubble-quickdrive-ai-control-8kg-white-ww80t854abh-s6/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/washers-and-dryers/washing-machines/ww8500t-front-loading-eco-bubble-quickdrive-ai-control-8kg-white-ww80t854abh-s6/" target="_blank"><button type="button" class="több  hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas3_3.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas3_3.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>WD7500T WD90T754DBH Mosó- és szárítógép</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-pro-tab" data-bs-toggle="pill" data-bs-target="#pills-pro" type="button" role="tab" aria-controls="pills-pro" aria-selected="false" style="background-color: white;"></button>
                                 </li>
@@ -390,22 +451,22 @@
                                 <li>Energiahatékonysági osztály : E</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">246.999 Ft</div>
-                        <a href="https://www.samsung.com/hu/washers-and-dryers/washer-dryer-combo/combo-wd90t754dbhs6-wd90t754dbh-s6/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/washers-and-dryers/washer-dryer-combo/combo-wd90t754dbhs6-wd90t754dbh-s6/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas3_4.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas3_4.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>WD5500K WD8NK52E0ZW/LE Mosó- és Szárítógép</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-pro-tab" data-bs-toggle="pill" data-bs-target="#pills-pro" type="button" role="tab" aria-controls="pills-pro" aria-selected="false" style="background-color: black;"></button>
                                 </li>
@@ -416,17 +477,17 @@
                                 <li>Energiahatékonysági osztály : F</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">249.999 Ft</div>
-                        <a href="https://www.samsung.com/hu/washers-and-dryers/washer-dryer-combo/wd5500kwd8nk52e0zwle-8kg-white-wd8nk52e0zw-le/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/washers-and-dryers/washer-dryer-combo/wd5500kwd8nk52e0zwle-8kg-white-wd8nk52e0zw-le/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-pre" role="tabpanel" aria-labelledby="pills-pre-tab" tabindex="0">
                                     <a href="https://www.samsung.com/hu/refrigerators/bottom-mount-freezer/rb7300t-390l-white-rb38c672cww-ef/"><img src="files/photos/haztartas3_5.webp"></a>
@@ -436,11 +497,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>DV7400B DV90BB7445GB/S6 Szárítógép</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-pre-tab" data-bs-toggle="pill" data-bs-target="#pills-pre" type="button" role="tab" aria-controls="pills-pre" aria-selected="false" style="background-color: white;"></button>
                                 </li>
@@ -454,22 +515,22 @@
                                 <li>QuickDrive™</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">407.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/washers-and-dryers/dryers/dv7400b-dryer-a-triple-plus-energy-efficiency-ai-dry-9kg-black-dv90bb7445gbs6/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/washers-and-dryers/dryers/dv7400b-dryer-a-triple-plus-energy-efficiency-ai-dry-9kg-black-dv90bb7445gbs6/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas3_6.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas3_6.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>DV8700TK Szárítógép</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-pro-tab" data-bs-toggle="pill" data-bs-target="#pills-pro" type="button" role="tab" aria-controls="pills-pro" aria-selected="false" style="background-color: black;"></button>
                                 </li>
@@ -480,16 +541,16 @@
                                 <li>Hygiene Care +</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">535.901 Ft</div>
-                        <a href="https://www.samsung.com/hu/washers-and-dryers/dryers/dv8700tk-16kg-black-dv16t8520bv-le/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/washers-and-dryers/dryers/dv8700tk-16kg-black-dv16t8520bv-le/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-ha" role="tabpanel" aria-labelledby="pills-ha-tab" tabindex="0">
                                 <img src="files/photos/haztartas3_7.avif" width="250px;">
@@ -499,11 +560,11 @@
                             </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>AirDresser ruhaápoló rendszer</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3 haz" id="pills-tab" role="tablist" style=" padding-right: 220px;">
+                            <ul class="nav nav-pills mb-3 haz" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-ha-tab" data-bs-toggle="pill" data-bs-target="#pills-ha" type="button" role="tab" aria-controls="pills-ha" aria-selected="false">45cm</button>
                                 </li>
@@ -517,10 +578,10 @@
                                 <li>BESPOKE</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">1.249.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/washers-and-dryers/airdresser/df9000rm-silver-mirror-df10a9500cg-e3/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/washers-and-dryers/airdresser/df9000rm-silver-mirror-df10a9500cg-e3/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
@@ -529,12 +590,12 @@
                 <div class="container">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas4_5.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas4_5.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>VS6000, VS60K6050KW/GE POWERstick álló porszívó</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="false" style="background-color: white;"></button>
                                 </li>
@@ -545,16 +606,16 @@
                                 <li>Extra hatékony fordulás, extra könnyű mozgás</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">119.190 Ft</div>
-                        <a href="https://www.samsung.com/hu/vacuum-cleaners/stick/samsung-powerstick-vs6000/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/vacuum-cleaners/stick/samsung-powerstick-vs6000/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-prea" role="tabpanel" aria-labelledby="pills-prea-tab" tabindex="0">
                                     <img src="files/photos/haztartas4_3.avif">
@@ -564,11 +625,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>Jet 60 Pet</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-prea-tab" data-bs-toggle="pill" data-bs-target="#pills-prea" type="button" role="tab" aria-controls="pills-prea" aria-selected="false" style="background-color: grey;"></button>
                                 </li>
@@ -582,22 +643,22 @@
                                 <li>Jet Cyclone</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">119.899 Ft</div>
-                        <a href="https://www.samsung.com/hu/vacuum-cleaners/stick/hand-stick-silver-vs15a6032r5-ge/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/vacuum-cleaners/stick/hand-stick-silver-vs15a6032r5-ge/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas4_1.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas4_1.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>Jet 75 Black</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-profilea-tab" data-bs-toggle="pill" data-bs-target="#pills-profilea" type="button" role="tab" aria-controls="pills-profilea" aria-selected="false" style="background-color: grey;"></button>
                                 </li>
@@ -609,26 +670,26 @@
                                 <li>Max fogyasztási teljesítmény : 550 W</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">150.899 Ft</div>
-                        <a href="https://www.samsung.com/hu/vacuum-cleaners/stick/vs7500-silver-vs20b7551bf-ge/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/vacuum-cleaners/stick/vs7500-silver-vs20b7551bf-ge/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="tab-content" id="pills-tabContent">
                                 <img src="files/photos/haztartas4_8.avif" alt="">
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>Jet 75 premium</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-pr-tab" data-bs-toggle="pill" data-bs-target="#pills-pr" type="button" role="tab" aria-controls="pills-pr" aria-selected="false" style="background-color: grey;"></button>
                                 </li>
@@ -639,21 +700,21 @@
                                 <li>Jet Cyclone</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">215.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/vacuum-cleaners/stick/stick-handy-vs20t7538t5/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/vacuum-cleaners/stick/stick-handy-vs20t7538t5/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="tab-content" id="pills-tabContent">
                             <img src="files/photos/haztartas4_2.avif" alt="">
                         </div>
                     </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                                 <p>Bespoke Jet pet - VS20A95823W/GE</p>
                             <p>Szín:</p>
@@ -669,22 +730,22 @@
                                 <li>99,999% többrétegű szűrőrendszer</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">219.990 Ft</div>
-                        <a href="https://www.samsung.com/hu/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-white-vs20a95823w-ge/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-white-vs20a95823w-ge/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas4_7.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3"><img src="files/photos/haztartas4_7.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>Jet Bot Robotporszívó</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="false" style="background-color: white;"></button>
                                 </li>
@@ -695,22 +756,22 @@
                                 <li>Könnyen kiüríthető, mosható portárolóval</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">171.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/vacuum-cleaners/robot/vr8000t-white-vr30t80313w-ge/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/vacuum-cleaners/robot/vr8000t-white-vr30t80313w-ge/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas4_6.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6"><img src="files/photos/haztartas4_6.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>Jet Bot+ Robotporszívó</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="false" style="background-color: white;"></button>
                                 </li>
@@ -722,10 +783,10 @@
                                 <li>Továbbfejlesztett Wi-Fi vezérlés</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">225.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/vacuum-cleaners/robot/vr8500t-white-vr30t85513w-ge/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/vacuum-cleaners/robot/vr8500t-white-vr30t85513w-ge/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
@@ -734,7 +795,7 @@
                 <div class="container">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-hae" role="tabpanel" aria-labelledby="pills-hae-tab" tabindex="0">
                                     <img src="files/photos/haztartas5_6.avif">
@@ -744,11 +805,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>MS20A3010AH/EO Mikrohullámú sütő</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-hae-tab" data-bs-toggle="pill" data-bs-target="#pills-hae" type="button" role="tab" aria-controls="pills-prea" aria-selected="false" style="background-color: white;"></button>
                                 </li>
@@ -763,22 +824,22 @@
                                 <li>Sütő űrtartalom : 20L (0.7 Cu.ft)</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">59.990 Ft</div>
-                        <a href="https://www.samsung.com/hu/microwave-ovens/solo/mw3000am-solo-full-glass-door-metallic-edge-dual-dial-led-lighting-ms20a3010ah-eo/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/microwave-ovens/solo/mw3000am-solo-full-glass-door-metallic-edge-dual-dial-led-lighting-ms20a3010ah-eo/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas5_8.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3"><img src="files/photos/haztartas5_8.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>MG22M8274AT/E2 - 22l-es, beépíthető mikrohullámú sütő</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="false" style="background-color: grey;"></button>
                                 </li>
@@ -790,27 +851,27 @@
                                 <li>Teljesítmény : 22L</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">82.990 Ft</div>
-                        <a href="https://www.samsung.com/hu/microwave-ovens/grill/mq8000m-mg22m8274at-e2/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/microwave-ovens/grill/mq8000m-mg22m8274at-e2/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-h" role="tabpanel" aria-labelledby="pills-h-tab" tabindex="0">
                                     <img src="files/photos/haztartas5_3.avif">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>NZ64B7799GK Főzőlap</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active border" id="pills-h-tab" data-bs-toggle="pill" data-bs-target="#pills-h" type="button" role="tab" aria-controls="pills-h" aria-selected="true" style="background-color: black;"></button>
                                 </li>
@@ -822,22 +883,22 @@
                                 <li>Wi-Fi csatlakoztathatóság</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">179.990 Ft</div>
-                        <a href="https://www.samsung.com/hu/cooking-appliances/hobs/nz8500bm-7-cooktop-extended-flex-zone-plus-assist-cook-assist-sensor-nz64b7799gk-u2/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/cooking-appliances/hobs/nz8500bm-7-cooktop-extended-flex-zone-plus-assist-cook-assist-sensor-nz64b7799gk-u2/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas5_4.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3"><img src="files/photos/haztartas5_4.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>NZ64M3707AK Indukciós főzőlap intuitív hőmérséklet-szabályozás funkcióval</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="false" style="background-color: black;"></button>
                                 </li>
@@ -848,28 +909,28 @@
                                 <li>Plusz energia (Power Boost) funkció</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">134.899 Ft</div>
-                        <a href="https://www.samsung.com/hu/cooking-appliances/hobs/induction-hob-with-4-burners-nz64m3707ak-ol/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/cooking-appliances/hobs/induction-hob-with-4-burners-nz64m3707ak-ol/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-pr" role="tabpanel" aria-labelledby="pills-pr-tab" tabindex="0">
                                     <img src="files/photos/haztartas5_5.avif">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>NK24M7070VB Nagy teljesítményű páraelszívó rendszer</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-pr-tab" data-bs-toggle="pill" data-bs-target="#pills-pr" type="button" role="tab" aria-controls="pills-pr" aria-selected="false" style="background-color: black;"></button>
                                 </li>
@@ -881,21 +942,21 @@
                                 <li>Maximális Légszállítás : 585 ㎥/h</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">179.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/cooking-appliances/hoods/wall-mount-hood-nk24m7070vb-ur/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/cooking-appliances/hoods/wall-mount-hood-nk24m7070vb-ur/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
-                        <div class="col-4"><img src="files/photos/haztartas5_2.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3"><img src="files/photos/haztartas5_2.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                                 <p>NV7B5775WAK BESPOKE Dual Cook Flex sütő</p>
                             <p>Szín:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active border" id="pills-homea-tab" data-bs-toggle="pill" data-bs-target="#pills-homea" type="button" role="tab" aria-controls="pills-homea" aria-selected="true" style="background-color: black;"></button>
                                 </li>
@@ -906,22 +967,22 @@
                                 <li>Hőlégkeverés Teljesítmény : 1200 / 1200 W</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">419.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/cooking-appliances/ovens/nv7000b-5series-dual-cook-flex-5series-dual-cook-flex-nv7b5775wak-u3/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/cooking-appliances/ovens/nv7000b-5series-dual-cook-flex-5series-dual-cook-flex-nv7b5775wak-u3/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas5_1.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3"><img src="files/photos/haztartas5_1.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>NV7B7997AAK Beépíthető sütő</p>
                             <p>Szín:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-profilea-tab" data-bs-toggle="pill" data-bs-target="#pills-profilea" type="button" role="tab" aria-controls="pills-profilea" aria-selected="false" style="background-color: black;"></button>
                                 </li>
@@ -932,10 +993,10 @@
                                 <li>Dual Cook Steam™</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">699.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/cooking-appliances/ovens/nv7000b-7series-ai-pro-cooking-full-steam-7series-ai-pro-cooking-nv7b7997aak-u3/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/cooking-appliances/ovens/nv7000b-7series-ai-pro-cooking-full-steam-7series-ai-pro-cooking-nv7b7997aak-u3/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
@@ -943,18 +1004,18 @@
             <div class="tab-pane fade" id="pills-di" role="tabpanel" aria-labelledby="pills-di-tab" tabindex="0">
                 <div class="container">
                     <div class="row border" style="border-radius: 50px;">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-h" role="tabpanel" aria-labelledby="pills-h-tab" tabindex="0">
                                     <img src="files/photos/haztartas6_3.avif">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>DW4000R Mosogatógép</p>
                             <p>Színek:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active border" id="pills-h-tab" data-bs-toggle="pill" data-bs-target="#pills-h" type="button" role="tab" aria-controls="pills-h" aria-selected="true" style="background-color: white;"></button>
                                 </li>
@@ -965,21 +1026,21 @@
                                 <li>1 óra expressz mosás</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">173.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/dishwashers/built-in/dw4000rm-dishwasher-with-less-noise-44db-dw50r4060bb-eo/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/dishwashers/built-in/dw4000rm-dishwasher-with-less-noise-44db-dw50r4060bb-eo/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
-                        <div class="col-4"><img src="files/photos/haztartas6_2.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3"><img src="files/photos/haztartas6_2.avif"></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                                 <p>DW5500MM mosogatógép széles LED kijelzővel</p>
                             <p>Szín:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active border" id="pills-homea-tab" data-bs-toggle="pill" data-bs-target="#pills-homea" type="button" role="tab" aria-controls="pills-homea" aria-selected="true" style="background-color: white;"></button>
                                 </li>
@@ -991,22 +1052,22 @@
                                 <li>Formaterv : Teljes mértékben beépíthető</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">190.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/dishwashers/built-in/dw5500mm-dw60m6050bb-eo/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/dishwashers/built-in/dw5500mm-dw60m6050bb-eo/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas6_1.avif" alt=""></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3"><img src="files/photos/haztartas6_1.avif" alt=""></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>DW6500AM szabadon álló mosogatógép</p>
                             <p>Szín:</p>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-profilea-tab" data-bs-toggle="pill" data-bs-target="#pills-profilea" type="button" role="tab" aria-controls="pills-profilea" aria-selected="false" style="background-color: grey;"></button>
                                 </li>
@@ -1018,28 +1079,28 @@
                                 <li>Telepítés : Szabadon álló</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">245.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/dishwashers/freestanding/dw6500am-high-energy-efficiency-13-place-settings-silver-dw60a6082fs-eo/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/dishwashers/freestanding/dw6500am-high-energy-efficiency-13-place-settings-silver-dw60a6082fs-eo/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-hae" role="tabpanel" aria-labelledby="pills-hae-tab" tabindex="0">
                                     <img src="files/photos/haztartas6_6.avif" width="250px">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>HVM 360 körkazettás Fan-coil beltéri egység</p>
                             <p>Teljesítmény:</p>
-                            <ul class="nav nav-pills mb-3 haz" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3 haz" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-hae-tab" data-bs-toggle="pill" data-bs-target="#pills-hae" type="button" role="tab" aria-controls="pills-prea" aria-selected="false">6,0 kW</button>
                                 </li>
@@ -1050,22 +1111,22 @@
                                 <li>Innovatív körkörös kialakítás</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">173.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/business/climate/vrf-chiller/ac-dvm-ag060mn4pkh-eu/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/business/climate/vrf-chiller/ac-dvm-ag060mn4pkh-eu/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4"><img src="files/photos/haztartas6_7.avif" width="250px;"></div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3"><img src="files/photos/haztartas6_7.avif" width="250px;"></div>
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>RAC, R32, WindFree falra szerelhető</p>
                             <p>Teljesítmmény:</p>
-                            <ul class="nav nav-pills mb-3 haz" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3 haz" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="false">2,5 kW</button>
                                 </li>
@@ -1076,28 +1137,28 @@
                                 <li>AI Auto Comfort mozgásérzékelővel</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">221.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/business/climate/residential/ac-rar-ar09axkaawkneu/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/business/climate/residential/ac-rar-ar09axkaawkneu/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-praa" role="tabpanel" aria-labelledby="pills-praa-tab" tabindex="0">
                                     <img src="files/photos/haztartas6_5.webp" width="250px;">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>DVM S2 Standard Heat Pump</p>
                             <p>Teljesítmény:</p>
-                            <ul class="nav nav-pills mb-3 haz" id="pills-tab" role="tablist" style=" padding-right: 280px;">
+                            <ul class="nav nav-pills mb-3 haz" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-praa-tab" data-bs-toggle="pill" data-bs-target="#pills-praa" type="button" role="tab" aria-controls="pills-praa" aria-selected="false">14.0 kW</button>
                                 </li>
@@ -1108,17 +1169,17 @@
                                 <li>Energiahatékonyság</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">2.235.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/business/climate/vrf-chiller/ac-dvm-am100axvagh-eu/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/business/climate/vrf-chiller/ac-dvm-am100axvagh-eu/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
                 <div class="container pt-3">
                     <div class="row border" style="border-radius: 50px;">
                         
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6 hgt3">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-haa" role="tabpanel" aria-labelledby="pills-haa-tab" tabindex="0">
                                     <img src="files/photos/haztartas6_4.webp" width="250px;">
@@ -1131,11 +1192,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-6">
                             <br>
                             <p>EHS Mono HT Quiet, R32, Hőszivattyú</p>
                             <p>Teljesítmény:</p>
-                            <ul class="nav nav-pills mb-3 haz" id="pills-tab" role="tablist" style=" padding-right: 120px;">
+                            <ul class="nav nav-pills mb-3 haz" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link border" id="pills-haa-tab" data-bs-toggle="pill" data-bs-target="#pills-haa" type="button" role="tab" aria-controls="pills-ha" aria-selected="false">8.0 kW</button>
                                 </li>
@@ -1152,10 +1213,10 @@
                                 <li>Esztétikus kialakítás</li>
                             </ul>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-3">
+                        <div class="col-lg-1 col-sm-3"></div>
+                        <div class="col-lg-3 col-sm-9">
                             <div class="ár">2.927.900 Ft</div>
-                        <a href="https://www.samsung.com/hu/business/climate/heating/ac-ehs-ae140bxydeg-eu/" target="_blank"><button type="button" class="több">Tudj meg többet!</button></a>
+                        <a href="https://www.samsung.com/hu/business/climate/heating/ac-ehs-ae140bxydeg-eu/" target="_blank"><button type="button" class="több hgt2">Tudj meg többet!</button></a>
                     </div>
                     </div>
                 </div>
