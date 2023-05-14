@@ -37,12 +37,73 @@
                 <li class="nav-item">
                     <a class="nav-link" href="tartozekok.html">Tartozékok</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ugyfel.html">Ügyfélszolgálat</a>
                 </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Kapcsolatfelvétel
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ügyfélszolgálat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="form">
+                            <form action="post">
+                                <div class="float-start">
+                                    <input class="ms-3 me-4 mb-3" type="text" placeholder="Vezetéknév">
+                                    <input class="ms-3 me-3 mb-3" type="text" placeholder="Keresztnév">
+                                </div>
+                                
+                                <div class="float-start pb-4">
+                                    <input type="email" placeholder="E-mail" class="ms-3 me-4">
+
+                                    <input type="phone" placeholder="Telefon" class="ms-3 me-3">
+                                </div>
+                                <p>Termékérdeklődés:</p>
+                                <div class="row ps-5">
+                                    <div class="col-6">
+                                        <input type="radio" id="mobil" name="fav_language" value="mobil">
+                                        <label for="mobil">Mobil</label>
+                                        <br>
+                                        <input type="radio" id="kijelzo" name="fav_language" value="kijelzo">
+                                        <label for="kijelzo">Kijelzők</label>
+                                        <br>
+                                        <input type="radio" id="klima" name="fav_language" value="klima">
+                                        <label for="klima">Klíma</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="radio" id="szamitastechnika" name="fav_language" value="szamitastechnika">
+                                        <label for="szamitastechnika">Számítástechnika</label>
+                                        <br>
+                                        <input type="radio" id="haztartasigep" name="fav_language" value="haztartasigep">
+                                        <label for="haztartasigep">Háztartási gépek</label>
+                                        <br>
+                                        <input type="radio" id="memoria" name="fav_language" value="memoria">
+                                        <label for="memoria">Memória</label>
+                                    </div>
+                                </div>
+                                <div class="float-start pt-4">
+                                    <input class="ms-3 me-4 mb-3" type="text" placeholder="Város">
+                                    <input class="ms-3 me-3 mb-3" type="number" placeholder="Irányítószám">
+                                </div>
+                                <div class="ps-4">
+                                    <textarea cols="46" rows="5" placeholder="Üzenet"></textarea>
+                                </div>
+                            </form>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Jóváhagyás</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
-      </nav>
+    </nav>
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -96,136 +157,140 @@
         </div>
     <br>
     <br>
-    <div class="container border bg-light text-center" style="border-radius: 50px;">
-        <div class="row">
-            <div class="col-3">
-                <div class="card col-12 col-lg-12">
-                    <img src="files/photos/home1_1.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title text-black">Tv</h5>
-                        <a href="tv.html" target="_blank" class="btn btn-dark text-light">Bővebben</a>
+        <div class="container border bg-light text-center" style="border-radius: 50px;">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="row p-2">
+                        <div class="card col-lg-12 col-sm-6">
+                            <img src="files/photos/home1_1.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-black">Tv</h5>
+                                <a href="tv.html" target="_blank" class="btn btn-dark text-light">Bővebben</a>
+                            </div>
+                        </div>
+                        <div class="card col-lg-12 col-sm-6">
+                            <img src="files/photos/home1_2.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-black">Porszívók</h5>
+                                <a href="haztartas.html" target="_blank" class="btn btn-dark text-light">Bővebben</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-12 col-lg-12">
-                    <img src="files/photos/home1_2.png" class="card-img-top">
+                <div class="card col-lg-6 col-sm-12 ca1">
+                    <img src="files/photos/home1_3.png" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title text-black">Porszívók</h5>
-                        <a href="haztartas.html" target="_blank" class="btn btn-dark text-light">Bővebben</a>
+                        <h5 class="card-title text-black">Galaktikus Ajánlatok</h5>
+                        <a href="galaktikus.html" target="_parent" class="btn btn-dark cr1 text-light">Bővebben</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="row p-2">
+                        <div class="card col-lg-12 col-sm-6">
+                            <img src="files/photos/home1_4.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-black">Galaxy S23</h5>
+                                <a href="samsungs23.html" target="_blank" class="btn btn-dark text-light">Vásárlás</a>
+                            </div>
+                        </div>
+                        <div class="card col-lg-12 col-sm-6">
+                            <img src="files/photos/home1_5.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-black">Tartozékok</h5>
+                                <a href="tartozekok.html" target="_blank" class="btn btn-dark text-light">Bővebben</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card col-6 col-lg-6" style="margin: 50px 0">
-                <img src="files/photos/home1_3.png" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title text-black">Galaktikus Ajánlatok</h5>
-                    <a href="galaktikus.html" target="_parent" class="btn btn-dark cr1 text-light">Bővebben</a>
+            <div class="f2">
+                <h1 class="text-center">Mobil</h1>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">S23</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Galaxy Z Fold4</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Galaxy Z Flip4</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Galaxy Watch5</button>
+                    </li>
+                </ul>
+                <div class="tab-content t1" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <a href="samsungs23.html"><img src="files/photos/home2_1.jpg"><h5 class="pt-3">Galaxy S23</h5></a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        <a href=""><img src="files/photos/home2_2.jpg"><h5 class="pt-3">Galaxy Z Fold4</h5></a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <a href=""><img src="files/photos/home2_3.jpg"><h5 class="pt-3">Galaxy Z Flip4</h5></a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                        <a href=""><img src="files/photos/home2_4.jpg"><h5 class="pt-3">Galaxy Watch5</h5></a>
+                    </div>
                 </div>
             </div>
-        <div class="col-3">
-            <div class="card col-12">
-                <img src="files/photos/home1_4.png" class="card-img-top">
-                <div class="card-body">
-                        <h5 class="card-title text-black">Galaxy S23</h5>
-                        <a href="samsungs23.html" target="_blank" class="btn btn-dark text-light">Vásárlás</a>
+            <div>
+                <h1 class="text-center">TV & AV</h1>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-hom" type="button" role="tab" aria-controls="pills-hom" aria-selected="true">Neo QLED 8K</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profil" type="button" role="tab" aria-controls="pills-profil" aria-selected="false">Neo QLED 4K</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contac" type="button" role="tab" aria-controls="pills-contac" aria-selected="false">OLED</button>
+                    </li>
+                </ul>
+                <div class="tab-content t1" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-hom" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <a href="tv.html"><img src="files/photos/home3_1.jpg"><h5 class="pt-3">Neo OLED 8K</h5></a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profil" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        <a href="tv.html"><img src="files/photos/home3_2.jpg"><h5 class="pt-3">Neo QLED 4K</h5></a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contac" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <a href="tv.html"><img src="files/photos/home3_3.avif"><h5 class="pt-3">OLED</h5></a>
+                    </div>
                 </div>
             </div>
-            <div class="card col-12">
-                <img src="files/photos/home1_5.png" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title text-black">Tartozékok</h5>
-                    <a href="tartozekok.html" target="_blank" class="btn btn-dark text-light">Bővebben</a>
+            <div class="f2">
+                <h1 class="text-center">Háztartási gépek</h1>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-ho" type="button" role="tab" aria-controls="pills-ho" aria-selected="true">BESPOKE Jet<sup>TM</sup></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profi" type="button" role="tab" aria-controls="pills-profi" aria-selected="false">BESPOKE</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-conta" type="button" role="tab" aria-controls="pills-conta" aria-selected="false">EcoBubble</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disable" type="button" role="tab" aria-controls="pills-disable" aria-selected="false">Samsung Jet Bot<sup>TM</sup></button>
+                    </li>
+                </ul>
+                <div class="tab-content t1" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-ho" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <a href="haztartas.html"><img src="files/photos/home4_1.webp"><h5 class="pt-3">BESPOKE Jet<sup>TM</sup></h5></a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profi" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        <a href="haztartas.html"><img src="files/photos/home4_2.webp"><h5 class="pt-3">BESPOKE</h5></a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-conta" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <a href="haztartas.html"><img src="files/photos/home4_3.jpg"><h5 class="pt-3">EcoBubble</h5></a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-disable" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                        <a href="haztartas.html"><img src="files/photos/home4_4.jpg"><h5 class="pt-3">Samsung Jet Bot<sup>TM</sup></h5></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="f2">
-        <h1 class="text-center">Mobil</h1>
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">S23</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Galaxy Z Fold4</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Galaxy Z Flip4</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Galaxy Watch5</button>
-            </li>
-        </ul>
-        <div class="tab-content t1" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                <a href="samsungs23.html"><img src="files/photos/home2_1.jpg"><h5 class="pt-3">Galaxy S23</h5></a>
-            </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                <a href=""><img src="files/photos/home2_2.jpg"><h5 class="pt-3">Galaxy Z Fold4</h5></a>
-            </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                <a href=""><img src="files/photos/home2_3.jpg"><h5 class="pt-3">Galaxy Z Flip4</h5></a>
-            </div>
-            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
-                <a href=""><img src="files/photos/home2_4.jpg"><h5 class="pt-3">Galaxy Watch5</h5></a>
-            </div>
-        </div>
-    </div>
-        <div>
-        <h1 class="text-center">TV & AV</h1>
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-hom" type="button" role="tab" aria-controls="pills-hom" aria-selected="true">Neo QLED 8K</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profil" type="button" role="tab" aria-controls="pills-profil" aria-selected="false">Neo QLED 4K</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contac" type="button" role="tab" aria-controls="pills-contac" aria-selected="false">OLED</button>
-            </li>
-        </ul>
-        <div class="tab-content t1" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-hom" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                <a href="tv.html"><img src="files/photos/home3_1.jpg"><h5 class="pt-3">Neo OLED 8K</h5></a>
-            </div>
-            <div class="tab-pane fade" id="pills-profil" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                <a href="tv.html"><img src="files/photos/home3_2.jpg"><h5 class="pt-3">Neo QLED 4K</h5></a>
-            </div>
-            <div class="tab-pane fade" id="pills-contac" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                <a href="tv.html"><img src="files/photos/home3_3.avif"><h5 class="pt-3">OLED</h5></a>
-            </div>
-        </div>
-    </div>
-    <div class="f2">
-        <h1 class="text-center">Háztartási gépek</h1>
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-ho" type="button" role="tab" aria-controls="pills-ho" aria-selected="true">BESPOKE Jet<sup>TM</sup></button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profi" type="button" role="tab" aria-controls="pills-profi" aria-selected="false">BESPOKE</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-conta" type="button" role="tab" aria-controls="pills-conta" aria-selected="false">EcoBubble</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disable" type="button" role="tab" aria-controls="pills-disable" aria-selected="false">Samsung Jet Bot<sup>TM</sup></button>
-            </li>
-        </ul>
-        <div class="tab-content t1" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-ho" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                <a href="haztartas.html"><img src="files/photos/home4_1.webp"><h5 class="pt-3">BESPOKE Jet<sup>TM</sup></h5></a>
-            </div>
-            <div class="tab-pane fade" id="pills-profi" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                <a href="haztartas.html"><img src="files/photos/home4_2.webp"><h5 class="pt-3">BESPOKE</h5></a>
-            </div>
-            <div class="tab-pane fade" id="pills-conta" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                <a href="haztartas.html"><img src="files/photos/home4_3.jpg"><h5 class="pt-3">EcoBubble</h5></a>
-            </div>
-            <div class="tab-pane fade" id="pills-disable" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
-                <a href="haztartas.html"><img src="files/photos/home4_4.jpg"><h5 class="pt-3">Samsung Jet Bot<sup>TM</sup></h5></a>
-            </div>
-        </div>
-    </div>
-    </div>
 <script src="script.js"></script>
 <script src="files/bootstrap.bundle.min.js"></script>
 </body>
