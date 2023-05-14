@@ -751,3 +751,11 @@ table tr td{
 .field-holder input:valid{
     border-bottom: 3px solid #424242;
 }
+
+.kozepre {
+    text-align: center;
+}
+
+.szeria {
+    font-size: 70px;
+}
