@@ -4,54 +4,371 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="files/Samsung_Favicon.png">
+    <title>Document</title>
     <link rel="stylesheet" href="files/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Monitorok</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg samsungmedium">
-        <div class="container d-block text-center">
-            <a href="." class="navbar-brand">
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav">
-                    <a href="index.html"><img src="files/oldal_logo.png" class="float-start" style="padding-top: 4px"></a>
-                    <a href="mobil.html" class="nav-link">Okostelefonok</a>
-                    <a href="tabletek.html" class="nav-link">Tabletek</a>
-                    <a href="tv.html" class="nav-link">Tv-k és audió</a>
-                    <a href="monitorok.html" class="nav-link">Monitorok</a>
-                    <a href="haztartas.html" class="nav-link">Háztartási gépek</a>
-                    <a href="tartozekok.html" class="nav-link">Tartozékok</a>
-                    <a href="ugyfel.html" class="nav-link">Ügyfélszolgálat</a>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- navbar -->
+    <nav class="container navbar navbar-expand-lg navbar-light bg-white p-4">
+      <div class="container-fluid">
+          <a href="index.html"><img src="files/oldal_logo.png" class="float-start pb-1"
+              style="padding-top: 4px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" href="mobil.html">Okostelefonok</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tabletek.html">Tabletek</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tv.html">Tv-k és audió</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="monitorok.html">Monitorok</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="haztartas.html">Háztartási gépek</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tartozekok.html">Tartozékok</a>
+              </li>
+              </ul>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Kapcsolatfelvétel
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Ügyfélszolgálat</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                      <div class="form">
+                          <form action="post">
+                              <div class="float-start">
+                                  <input class="ms-3 me-4 mb-3" type="text" placeholder="Vezetéknév">
+                                  <input class="ms-3 me-3 mb-3" type="text" placeholder="Keresztnév">
+                              </div>
+                              
+                              <div class="float-start pb-4">
+                                  <input type="email" placeholder="E-mail" class="ms-3 me-4">
+
+                                  <input type="phone" placeholder="Telefon" class="ms-3 me-3">
+                              </div>
+                              <p>Termékérdeklődés:</p>
+                              <div class="row ps-5">
+                                  <div class="col-6">
+                                      <input type="radio" id="mobil" name="fav_language" value="mobil">
+                                      <label for="mobil">Mobil</label>
+                                      <br>
+                                      <input type="radio" id="kijelzo" name="fav_language" value="kijelzo">
+                                      <label for="kijelzo">Kijelzők</label>
+                                      <br>
+                                      <input type="radio" id="klima" name="fav_language" value="klima">
+                                      <label for="klima">Klíma</label>
+                                  </div>
+                                  <div class="col-6">
+                                      <input type="radio" id="szamitastechnika" name="fav_language" value="szamitastechnika">
+                                      <label for="szamitastechnika">Számítástechnika</label>
+                                      <br>
+                                      <input type="radio" id="haztartasigep" name="fav_language" value="haztartasigep">
+                                      <label for="haztartasigep">Háztartási gépek</label>
+                                      <br>
+                                      <input type="radio" id="memoria" name="fav_language" value="memoria">
+                                      <label for="memoria">Memória</label>
+                                  </div>
+                              </div>
+                              <div class="float-start pt-4">
+                                  <input class="ms-3 me-4 mb-3" type="text" placeholder="Város">
+                                  <input class="ms-3 me-3 mb-3" type="number" placeholder="Irányítószám">
+                              </div>
+                              <div class="ps-4">
+                                  <textarea cols="46" rows="5" placeholder="Üzenet"></textarea>
+                              </div>
+                          </form>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Jóváhagyás</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
 
     <div>
-        <img id="monitorok_fo" src="files/photos/monitorok_fo.jpg" alt="">
+      <h1 class="kozepre szeria">Gaming:</h1>
     </div>
-    <div class=" container monitorok_tartalom_1">
-        <h1 id="monitorok_h1">
-            Gaming
-        </h1>
-        <div id="monitorok_p" class="row">
-            <h1 id="monitorok_h1_belso">27" Odyssey G7 Gaming monitor:</h1>
-            <img class="mobile_img col-4 col-md-4 col-sm-4 col-xs-4" src="files/photos/Odyssey_G7.jpg" alt="" title="">
-            <div class="col-8 col-md-8 col-sm-8 col-xs-8">
-                <h2 class="vigyel">Előnyei:</h2>
-                <p class="vigyel_szvg">
-                    <ol>
-                        <li>Az 1000R, az ívelt képernyőtechnika új csúcsa, amely megfelel az emberi szem kontúrjainak az elképzelhetetlen realizmus érdekében</li>
-                        <li>A QLED, a HDR600 és a WQHD felbontás együttműködésével lenyűgöző színek elevenednek meg előtted, teljes mélységgel és részletességgel</li>
-                        <li>A 240 Hz-es RapidCurve, az 1 milliszekundumos válaszidő és a G-Sync kompatibilitás emel a játék csúcsára</li>
-                    </ol>
-                </p>
-            </div>
-        </div>
+    <!-- Samsung Odyssey G7 -->
+    <div class="row hatter">
+      <h2 id="smodell" class="focim">Samsung Odyssey G7</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">A monitor egyik különlegessége:</h3>
+        <p>
+          144Hz képernyő frissítési ráta és 1 ms válaszidő
+
+          Győzz le minden ellenséget, akár száguldozó sebességgel is! A 144Hz képernyő frissítési ráta, ami a legmagasabb a 4K gaming monitorok esetében, minimalizálja a késést gördülékeny akcióért. - Mindezt kiemelkedő UHD részletességgel. Vesd rá magad az ellenségekre, amint meglátod őket az 1 ms-es válaszidővel és elmosódásmentes megjelenítéssel, szellemképhatás nélkül!
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Típus:</span> 	LED monitor
+        </p>
+        <p>
+          <span class="adatok">Panel típusa:</span> IPS
+        </p>
+        <p>
+          <span class="adatok">Képátló:</span> 28 inch
+        </p>
+        <p>
+          <span class="adatok">Képarány:</span> 	16:9
+        </p>
+        <p>
+          <span class="adatok">Felbontás:</span> 	3840 x 2160
+        </p>
+        <p>
+          <span class="adatok">Válaszidő:</span> 	1 ms
+        </p>
+        <p>
+          <span class="adatok">Betekintési szög:</span> 	178 °
+        </p>
+        <p>
+          <span class="adatok">Képfrissítési frekvencia:</span> 	144 Hz
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-g7-27-inch-240hz-1ms-curved-lc27g75tqspxen/">
+          <img class="okostelefonokkiskep" src="files/photos/Odyssey_G7.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+        </a>
+      </div>
+    </div>
+    <!-- Samsung Odyssey G7 -->
+    <!-- Samsung Odyssey G9 -->
+    <div class="row">
+      <h2 id="smodell" class="focim">Samsung Odyssey G9</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">A monitor egyik különlegessége:</h3>
+        <p>
+          144Hz képernyő frissítési ráta és 1 ms válaszidő
+
+          Győzz le minden ellenséget, akár száguldozó sebességgel is! A 144Hz képernyő frissítési ráta, ami a legmagasabb a 4K gaming monitorok esetében, minimalizálja a késést gördülékeny akcióért. - Mindezt kiemelkedő UHD részletességgel. Vesd rá magad az ellenségekre, amint meglátod őket az 1 ms-es válaszidővel és elmosódásmentes megjelenítéssel, szellemképhatás nélkül!
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Típus:</span> 	QLED monitor
+        </p>
+        <p>
+          <span class="adatok">Panel típusa:</span> 	VA
+        </p>
+        <p>
+          <span class="adatok">Képátló:</span> 49 inch
+        </p>
+        <p>
+          <span class="adatok">Képarány:</span> 		32:9
+        </p>
+        <p>
+          <span class="adatok">Felbontás:</span> 	5120 x 1440
+        </p>
+        <p>
+          <span class="adatok">Válaszidő:</span>	1 ms
+        </p>
+        <p>
+          <span class="adatok">Betekintési szög:</span> 	178 °
+        </p>
+        <p>
+          <span class="adatok">Képfrissítési frekvencia:</span> 	240 Hz
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-oled-g9-g95sc-49-inch-240hz-curved-dual-qhd-ls49cg950suxdu/">
+          <img class="okostelefonokkiskep" src="files/photos/Odyssey_G9.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+        </a>
+      </div>
+    </div>
+    <!-- Samsung Odyssey G9 -->
+    <div>
+      <h1 class="kozepre szeria">Üzleti:</h1>
+    </div>
+    <!-- Samsung F32TU870VR -->
+    <div class="row hatter">
+      <h2 id="smodell" class="focim">Samsung F32TU870VR</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">A monitor egyik különlegessége:</h3>
+        <p>
+          Egy milliárd szín és HDR
+
+          Lásd a munkádat igazi valójában! Akár egy milliárd színárnyalatot és HDR-t jelenít meg valósághűen, széles színválasztékkal, mély és sötét feketékkel, valamint ragyogó fehérekkel. Kényeztesd a szemedet élethű színekkel, miközben grafikákkal dolgozol, videókat nézel, vagy dizájnokat ellenőrzöl!
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Típus:</span> 	LED monitor
+        </p>
+        <p>
+          <span class="adatok">Panel típusa:</span> 	VA
+        </p>
+        <p>
+          <span class="adatok">Képátló:</span> 	32 inch
+        </p>
+        <p>
+          <span class="adatok">Képarány:</span> 	16:9
+        </p>
+        <p>
+          <span class="adatok">Felbontás:</span> 	3840 x 2160
+        </p>
+        <p>
+          <span class="adatok">Válaszidő:</span> 		5 ms
+        </p>
+        <p>
+          <span class="adatok">Betekintési szög:</span> 	178 °
+        </p>
+        <p>
+          <span class="adatok">Képfrissítési frekvencia:</span> 	60 Hz
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-g7-27-inch-240hz-1ms-curved-lc27g75tqspxen/">
+          <img class="okostelefonokkiskep" src="files/photos/F32TU870VR.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+        </a>
+      </div>
+    </div>
+    <!-- Samsung Odyssey G7 -->
+    <!-- Samsung Odyssey G9 -->
+    <div class="row">
+      <h2 id="smodell" class="focim">Samsung F24T450FQR</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">A monitor egyik különlegessége:</h3>
+        <p>
+          Nagyobb képernyőfelület, amire koncentrálhatsz
+
+          A keret nélküli kialakítás maximalizálja a koncentrációt. Láss mindent egy pillantásra egy olyan képernyőn, ami szinte rés nélküli, amikor dupla monitoros rendszerben használod! A kevesebb zavaró tényezővel több feladatot fejezhetsz be a képernyő előtt töltött idő alatt.
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Típus:</span> 		LED monitor
+        </p>
+        <p>
+          <span class="adatok">Panel típusa:</span> 		IPS
+        </p>
+        <p>
+          <span class="adatok">Képátló:</span> 	24 inch
+        </p>
+        <p>
+          <span class="adatok">Képarány:</span> 			16:9
+        </p>
+        <p>
+          <span class="adatok">Felbontás:</span>	1920 x 1080
+        </p>
+        <p>
+          <span class="adatok">Válaszidő:</span>	5 ms
+        </p>
+        <p>
+          <span class="adatok">Betekintési szög:</span>	178 °
+        </p>
+        <p>
+          <span class="adatok">Képfrissítési frekvencia:</span>	75 Hz
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-oled-g9-g95sc-49-inch-240hz-curved-dual-qhd-ls49cg950suxdu/">
+          <img class="okostelefonokkiskep" src="files/photos/F24T450FQR.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+        </a>
+      </div>
+    </div>
+    <!-- Samsung Odyssey G9 -->
+    <div>
+      <h1 class="kozepre szeria">Smart:</h1>
+    </div>
+    <!-- Samsung S32BM801UU Smart M8  -->
+    <div class="row hatter">
+      <h2 id="smodell" class="focim">Samsung S32BM801UU Smart M8</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">A monitor egyik különlegessége:</h3>
+        <p>
+          Smart TV funkció
+          Könnyed szórakozás. Élvezd a Netflixet, a YouTube-ot és más streaming-szolgáltatásokat, elég csak a monitort WiFi-hez csatlakoztatnod. A Samsung TV Plus ingyenes élő és igény szerinti tartalmakat is kínál, letöltés vagy regisztráció nélkül, az Universal Guide pedig személyre szabott tartalomajánlásokat biztosít.
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Típus:</span> LED monitor
+        </p>
+        <p>
+          <span class="adatok">Panel típusa:</span>	VA
+        </p>
+        <p>
+          <span class="adatok">Képátló:</span>	32 inch
+        </p>
+        <p>
+          <span class="adatok">Képarány:</span> 	16:9
+        </p>
+        <p>
+          <span class="adatok">Felbontás:</span> 	3840 x 2160
+        </p>
+        <p>
+          <span class="adatok">Válaszidő:</span>	1 ms
+        </p>
+        <p>
+          <span class="adatok">Betekintési szög:</span>	178 °
+        </p>
+        <p>
+          <span class="adatok">Képfrissítési frekvencia:</span>	60 Hz
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-g7-27-inch-240hz-1ms-curved-lc27g75tqspxen/">
+          <img class="okostelefonokkiskep" src="files/photos/S32BM801UU.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+        </a>
+      </div>
+    </div>
+    <!-- Samsung S32BM801UU Smart M8  -->
+    <!-- Samsung S32BM701UU Smart M7 -->
+    <div class="row">
+      <h2 id="smodell" class="focim">Samsung S32BM701UU Smart M7</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">A monitor egyik különlegessége:</h3>
+        <p>
+          Nagyobb képernyőfelület, amire koncentrálhatsz
+
+          A keret nélküli kialakítás maximalizálja a koncentrációt. Láss mindent egy pillantásra egy olyan képernyőn, ami szinte rés nélküli, amikor dupla monitoros rendszerben használod! A kevesebb zavaró tényezővel több feladatot fejezhetsz be a képernyő előtt töltött idő alatt.
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Típus:</span>	LED monitor
+        </p>
+        <p>
+          <span class="adatok">Panel típusa:</span>	VA
+        </p>
+        <p>
+          <span class="adatok">Képátló:</span>	32 inch
+        </p>
+        <p>
+          <span class="adatok">Képarány:</span>	16:9
+        </p>
+        <p>
+          <span class="adatok">Felbontás:</span>	3840 x 2160
+        </p>
+        <p>
+          <span class="adatok">Válaszidő:</span>	4 ms
+        </p>
+        <p>
+          <span class="adatok">Betekintési szög:</span>	178 °
+        </p>
+        <p>
+          <span class="adatok">Képfrissítési frekvencia:</span>	60 Hz
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-oled-g9-g95sc-49-inch-240hz-curved-dual-qhd-ls49cg950suxdu/">
+          <img class="okostelefonokkiskep" src="files/photos/S32BM701UU.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+        </a>
+      </div>
     </div>
 </body>
 </html>

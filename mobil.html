@@ -4,32 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kezdőlap | Samsung Magyarország</title>
-    <link rel="icon" href="files/Samsung_Favicon.png">
+    <title>Document</title>
     <link rel="stylesheet" href="files/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="playvideo()">
-    <nav class="navbar navbar-expand-lg samsungmedium">
-        <div class="container d-block text-center">
-            <a href="." class="navbar-brand">
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav">
-                    <a href="index.html"><img src="files/oldal_logo.png" class="float-start" style="padding-top: 4px"></a>
-                    <a href="mobil.html" class="nav-link">Okostelefonok</a>
-                    <a href="tabletek.html" class="nav-link">Tabletek</a>
-                    <a href="tv.html" class="nav-link">Tv-k és audió</a>
-                    <a href="monitorok.html" class="nav-link">Monitorok</a>
-                    <a href="haztartas.html" class="nav-link">Háztartási gépek</a>
-                    <a href="tartozekok.html" class="nav-link">Tartozékok</a>
-                    <a href="ugyfel.html" class="nav-link">Ügyfélszolgálat</a>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body>
+    <!-- navbar -->
+    <nav class="container navbar navbar-expand-lg navbar-light bg-white p-4">
+      <div class="container-fluid">
+          <a href="index.html"><img src="files/oldal_logo.png" class="float-start pb-1"
+              style="padding-top: 4px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" href="mobil.html">Okostelefonok</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tabletek.html">Tabletek</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tv.html">Tv-k és audió</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="monitorok.html">Monitorok</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="haztartas.html">Háztartási gépek</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tartozekok.html">Tartozékok</a>
+              </li>
+              </ul>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Kapcsolatfelvétel
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Ügyfélszolgálat</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                      <div class="form">
+                          <form action="post">
+                              <div class="float-start">
+                                  <input class="ms-3 me-4 mb-3" type="text" placeholder="Vezetéknév">
+                                  <input class="ms-3 me-3 mb-3" type="text" placeholder="Keresztnév">
+                              </div>
+                              
+                              <div class="float-start pb-4">
+                                  <input type="email" placeholder="E-mail" class="ms-3 me-4">
+
+                                  <input type="phone" placeholder="Telefon" class="ms-3 me-3">
+                              </div>
+                              <p>Termékérdeklődés:</p>
+                              <div class="row ps-5">
+                                  <div class="col-6">
+                                      <input type="radio" id="mobil" name="fav_language" value="mobil">
+                                      <label for="mobil">Mobil</label>
+                                      <br>
+                                      <input type="radio" id="kijelzo" name="fav_language" value="kijelzo">
+                                      <label for="kijelzo">Kijelzők</label>
+                                      <br>
+                                      <input type="radio" id="klima" name="fav_language" value="klima">
+                                      <label for="klima">Klíma</label>
+                                  </div>
+                                  <div class="col-6">
+                                      <input type="radio" id="szamitastechnika" name="fav_language" value="szamitastechnika">
+                                      <label for="szamitastechnika">Számítástechnika</label>
+                                      <br>
+                                      <input type="radio" id="haztartasigep" name="fav_language" value="haztartasigep">
+                                      <label for="haztartasigep">Háztartási gépek</label>
+                                      <br>
+                                      <input type="radio" id="memoria" name="fav_language" value="memoria">
+                                      <label for="memoria">Memória</label>
+                                  </div>
+                              </div>
+                              <div class="float-start pt-4">
+                                  <input class="ms-3 me-4 mb-3" type="text" placeholder="Város">
+                                  <input class="ms-3 me-3 mb-3" type="number" placeholder="Irányítószám">
+                              </div>
+                              <div class="ps-4">
+                                  <textarea cols="46" rows="5" placeholder="Üzenet"></textarea>
+                              </div>
+                          </form>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Jóváhagyás</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -44,82 +118,299 @@
                             <h5>Galaxy S23 | S23+ | S23 Ultra</h5>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div>
-                            <img src="files/photos/mobile_2.jpg" class="d-block w-100 mobileimg">
-                            <div class="mobile_gomb">
-                                <h1 class="carousel_felirat">Galaxy Z Fold 4</h1>   
-                                <a  href="#galaxyzfold"><button class="button_galaxyz">Megnézem</button></a>
-                            </div>
-                        </div>
+                    <div class="carousel-item c-item">
+                      <img src="files/photos/galaxya.jpg" class="d-block w-100 c-img" alt="Második carousel kép">
+                      <div style="color: white;" class="carousel-caption d-none d-md-block">
+                        <h1 class="text-shadow">Samsung galaxy a modell</h1>
+                        <p class="text-shadow">Tekintse meg új modelleinket.</p>
+                        <button class="btn btn-primary">Megnézem!</button>
+                      </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="files/photos/mobile_3.jpg" class="d-block w-100 mobileimg">
+                    <div class="carousel-item c-item">
+                      <img src="files/photos/galaxyz.jpg" class="d-block w-100 c-img" alt="Harmadik carousel kép">
+                      <div style="color: white;" class="carousel-caption d-none d-md-block">
+                        <h1 class="text-shadow">Samsung galaxy z modell</h1>
+                        <p class="text-shadow">Tekintse meg új modelleinket.</p>
+                        <button class="btn btn-primary">Megnézem!</button>
+                      </div>
                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+          </div>
+      </div>
+  </div>
+  <!-- okostelefonfo -->
+    <!-- tartalom -->
+    <div>
+      <div>
+        <h1 class="kozepre szeria">Samsung galaxy S széria:</h1>
+      </div>
+    <!-- s23 -->
+        <div class="row hatter">
+          <h2 id="smodell" class="focim">Samsung Galaxy S23</h2>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+            <h3 class="ujcim">Újdonság az előző modellhez képest:</h3>
+            <p>
+              A Galaxyhoz készült Snapdragon® 8 Gen 2 mobilplatform energiával látja el telefonját, hogy jobb játék- és videostreamelést biztosítson, meghosszabbított akkumulátor-üzemidővel, hogy átvigye Önt a nap leghíresebb napján.
+            </p>
+            <h3 class="gyaricim">Gyári adatok:</h3>
+            <p>
+              <span class="adatok">Felbontás:</span> 2340 x 1080 (FHD+)
+            </p>
+            <p>
+              <span class="adatok">Hátlapi kamera - felbontás (Többféle érték):</span> 50.0 MP + 10.0 MP + 12.0 MP
+            </p>
+            <p>
+              <span class="adatok">Előlapi kamera - felbontás:</span> 12.0 MP
+            </p>
+            <p>
+              <span class="adatok">Videofelvétel felbontás:</span> UHD 8K (7680 x 4320) @30fps
+            </p>
+            <p>
+              <span class="adatok">Akkumulátor kapacitás (mAh, átlagos):</span> 3900
+            </p>
+            <p>
+              <span class="adatok">Tárhely (GB):</span> 256 
+            </p>
+            <p>
+              <span class="adatok">Méretek (Ma x Szé x Mé, mm):</span> 146.3 x 70.9 x 7.6
+            </p>
+            <p>
+              <span class="adatok">Súly (g):</span> 168
+            </p>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+            <a target="_blank" href="https://www.samsung.com/hu/smartphones/galaxy-s23/buy/">
+              <img class="okostelefonokkiskep" src="files/photos/s23.jpg" alt="Samsung galaxy s23 kép" title="Samsung galaxy s23">
+            </a>
+          </div>
         </div>
-
-    <div class="mobile_tartalom_1 container">
-        <h1 id="mobile_h1">
-            Samsung galaxy S széria új telefonja:
-        </h1>
-        <div id="mobile_p" class="row">
-            <h1 id="monitorok_h1_belso">Samsung S23 | S23+</h1>
-            <img class="mobile_img col-4 col-md-4 col-sm-12 col-xs-12" src="files/photos/galaxy_s23.avif" alt="Samsung galaxy s23 | s23+" title="Samsung galaxy s23 | s23+">
-            <div class="col-8 col-md-8 col-sm-12 col-xs-12">
-                <h2 class="vigyel">Vigyél fényt az éjszakába!</h2>
-                <p class="vigyel_szvg">
-                    Töltsd fel galériádat olyan menő éjszakai felvételekkel, amelyekre mindenki vágyik! A Nightography, éjszakai felvételek továbbfejlesztett mesterséges intelligenciája tisztán tartja a részleteket, így a gyenge fényviszonyok mellett készült fényképek és videók fényesek és színesek lesznek.
-                </p>
-                <a href="samsungs23.html">
-                    <button class="button_mobile">Bővebben</button>
-                </a>
-            </div>
-        </div>
-        <div id="csik"></div>
-        <h1 id="mobile_h1">
-            Galaxy Z széria
-        </h1>
-        <div id="mobile_p" class="row">
-            <div class="col-8 col-md-8 col-sm-8 col-xs-8">
-                <h2 class="vigyel">Galaxy Z Fold 4</h2>
-                <p class="galaxyz_szvg">
-                    Válts munkáról pihenésre és fordítva pillanatok alatt!
-                </p>
-                <a href="galaxyz.html">
-                    <button class="button_galaxyz">Bővebben</button>
-                </a>
-            </div>
-            <video src="files/photos/galaxyz.mp4" id="videoz" muted class="col-4 col-md-4 col-sm-4 col-xs-4 d-block w-100 galaxyzvideo">
-        </div>
-        <div id="csik"></div>
-        <div id="mobile_p" class="row">
-            <video src="files/photos/galaxyz_flip.mp4" id="videoz" autoplay muted class="col-4 col-md-4 col-sm-4 col-xs-4 d-block w-100 galaxyzflipvideo">
-            <div class="col-8 col-md-8 col-sm-8 col-xs-8">
-                <h2 class="vigyel">Galaxy Z Flip 4</h2>
-                <p class="vigyel_szvg">
-                    Az összehajtható telefon.
-                </p>
-                <a href="samsungs23.html">
-                    <button class="button_mobile">Bővebben</button>
-                </a>
-            </div>
-        </div>
+    <!-- s23 -->
+    <!-- s23+ -->
+    <div class="row">
+      <h2 id="smodell" class="focim">Samsung Galaxy S23+</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">Újdonság az előző modellhez képest:</h3>
+        <p>
+          A Galaxyhoz készült Snapdragon® 8 Gen 2 mobilplatform energiával látja el telefonját, hogy jobb játék- és videostreamelést biztosítson, meghosszabbított akkumulátor-üzemidővel, hogy átvigye Önt a nap leghíresebb napján.
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Felbontás:</span> 2340 x 1080 (FHD+)
+        </p>
+        <p>
+          <span class="adatok">Hátlapi kamera - felbontás (Többféle érték):</span> 50.0 MP + 10.0 MP + 12.0 MP
+        </p>
+        <p>
+          <span class="adatok">Előlapi kamera - felbontás:</span> 12.0 MP
+        </p>
+        <p>
+          <span class="adatok">Videofelvétel felbontás:</span> UHD 8K (7680 x 4320) @30fps
+        </p>
+        <p>
+          <span class="adatok">Akkumulátor kapacitás (mAh, átlagos):</span> 4700
+        </p>
+        <p>
+          <span class="adatok">Tárhely (GB):</span> 256
+        </p>
+        <p>
+          <span class="adatok">Méretek (Ma x Szé x Mé, mm):</span> 157.8 x 76.2 x 7.6
+        </p>
+        <p>
+          <span class="adatok">Súly (g):</span> 195
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/smartphones/galaxy-s23/buy/">
+          <img class="okostelefonokkiskep" src="files/photos/s23+.jpg" alt="Samsung galaxy s23+ kép" title="Samsung galaxy s23+">
+        </a>
+      </div>
     </div>
-    
-<script src="script.js">
-</script>
-<script src="files/bootstrap.bundle.min.js"></script>
+    <!-- s23+ -->
+    <!-- s23 Ultra -->
+    <div class="row hatter">
+      <h2 id="smodell" class="focim">Samsung Galaxy S23 Ultra</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">Újdonság az előző modellhez képest:</h3>
+        <p>
+          A Galaxyhoz készült Snapdragon® 8 Gen 2 mobilplatform energiával látja el telefonját, hogy jobb játék- és videostreamelést biztosítson, meghosszabbított akkumulátor-üzemidővel, hogy átvigye Önt a nap leghíresebb napján.
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Felbontás:</span> 3088 x 1440 (Quad HD+)
+        </p>
+        <p>
+          <span class="adatok">Hátlapi kamera - felbontás (Többféle érték):</span> 200.0 MP + 10.0 MP + 12.0 MP + 10.0 MP
+        </p>
+        <p>
+          <span class="adatok">Előlapi kamera - felbontás:</span> 12.0 MP
+        </p>
+        <p>
+          <span class="adatok">Videofelvétel felbontás:</span> UHD 8K (7680 x 4320) @30fps
+        </p>
+        <p>
+          <span class="adatok">Akkumulátor kapacitás (mAh, átlagos):</span> 5000
+        </p>
+        <p>
+          <span class="adatok">Tárhely (GB):</span> 512
+        </p>
+        <p>
+          <span class="adatok">Méretek (Ma x Szé x Mé, mm):</span> 163.4 x 78.1 x 8.9
+        </p>
+        <p>
+          <span class="adatok">Súly (g):</span> 233
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/smartphones/galaxy-s23-ultra/buy/">
+          <img class="okostelefonokkiskep" src="files/photos/s23Ultrajo.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+        </a>
+      </div>
+    </div>
+    <!-- s23 Ultra -->
+    <div>
+      <h1 class="kozepre szeria">Samsung galaxy A széria:</h1>
+    </div>
+    <!-- Galaxy A53 5G -->
+    <div class="row">
+      <h2 id="smodell" class="focim">Samsung Galaxy A53 5G</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">Újdonság az előző modellhez képest:</h3>
+        <p>
+          Galaxy A53 5G többkamerás rendszere a következő szintre emeli a fényképezést. Készíts tisztább, élesebb képeket az ultranagy felbontású, 64 MP-es Főkamerával és OIS funkcióval, bővítsd a látószöget az Ultraszéles látószögű kamerával, és szabd személyre a fókuszt a Mélységérzékelő kamerával, vagy kerülj közelebb a részletekhez a Makrókamerával!
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Felbontás:</span> 1080 x 2400 (FHD+)
+        </p>
+        <p>
+          <span class="adatok">Hátlapi kamera - felbontás (Többféle érték):</span> 64.0 MP + 12.0 MP + 5.0 MP + 5.0 MP
+        </p>
+        <p>
+          <span class="adatok">Előlapi kamera - felbontás:</span> 32.0 MP
+        </p>
+        <p>
+          <span class="adatok">Videofelvétel felbontás:</span> UHD 4K (3840 x 2160) @30fps
+        </p>
+        <p>
+          <span class="adatok">Akkumulátor kapacitás (mAh, átlagos):</span> 5000
+        </p>
+        <p>
+          <span class="adatok">Tárhely (GB):</span> 128
+        </p>
+        <p>
+          <span class="adatok">Méretek (Ma x Szé x Mé, mm):</span> 159.6 x 74.8 x 8.1
+        </p>
+        <p>
+          <span class="adatok">Súly (g):</span> 189
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/smartphones/galaxy-a/galaxy-a53-5g-awesome-blue-128gb-sm-a536blbneue/">
+          <img class="okostelefonokkiskep" src="files/photos/a535g.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+        </a>
+      </div>
+    </div>
+    <!-- Galaxy A53 5G -->
+    <div>
+      <h1 class="kozepre szeria">Samsung galaxy Z széria:</h1>
+    </div>
+    <!-- Galaxy Z Fold4 -->
+    <div class="row hatter">
+      <h2 id="smodell" class="focim">Galaxy Z Fold4</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">A telefon egyik különlegessége:</h3>
+        <p>
+          Végezz többnél is több feladattal!
+          Húzd ki a listádról a feladatokat kevesebb érintéssel! Helyezz a multitasking titkos fegyverének tekinthető tálcára alkalmazásokat a gyors navigáció érdekében, és váltogass az ablakok között, ha éppen olyan a hangulatod.5 Az Alkalmazáspár funkcióval egyetlen érintéssel akár három alkalmazást is megnyithatsz, mindet egy szuper produktív képernyőn.
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Felbontás:</span> 2176 x 1812 (QXGA+)
+        </p>
+        <p>
+          <span class="adatok">Hátlapi kamera - felbontás (Többféle érték):</span> 50.0 MP + 12.0 MP + 10.0 MP
+        </p>
+        <p>
+          <span class="adatok">Előlapi kamera - felbontás:</span> -
+        </p>
+        <p>
+          <span class="adatok">Videofelvétel felbontás:</span> UHD 8K (7680 x 4320) @24fps
+        </p>
+        <p>
+          <span class="adatok">Akkumulátor kapacitás (mAh, átlagos):</span> 4400
+        </p>
+        <p>
+          <span class="adatok">Tárhely (GB):</span> 256
+        </p>
+        <p>
+          <span class="adatok">Méretek (Ma x Szé x Mé, mm):</span> 155.1 x 130.1 x 6.3
+        </p>
+        <p>
+          <span class="adatok">Súly (g):</span> 263
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/smartphones/galaxy-z-fold4/buy/">
+          <img class="okostelefonokkiskep" src="files/photos/zfold.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+        </a>
+      </div>
+    </div>
+    <!-- Galaxy Z Fold4 -->
+    <!-- Galaxy Z Flip4 -->
+    <div class="row">
+      <h2 id="smodell" class="focim">Galaxy Z Flip4</h2>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <h3 class="ujcim">A telefon egyik különlegessége:</h3>
+        <p>
+          Mindenhol kényelmesen elfér.
+          Soha többé nem kell a telefonodhoz öltöznöd! A kicsire összecsukható, sokoldalú Galaxy Z Flip4 egy kompakt, normál méretű okostelefon, amely ha nem használod, meglapul a zsebedben.
+        </p>
+        <h3 class="gyaricim">Gyári adatok:</h3>
+        <p>
+          <span class="adatok">Felbontás:</span> 2640 x 1080 (FHD+)
+        </p>
+        <p>
+          <span class="adatok">Hátlapi kamera - felbontás (Többféle érték):</span> 12.0 MP + 12.0 MP
+        </p>
+        <p>
+          <span class="adatok">Előlapi kamera - felbontás:</span> 10.0 MP
+        </p>
+        <p>
+          <span class="adatok">Videofelvétel felbontás:</span> UHD 4K (3840 x 2160) @60fps
+        </p>
+        <p>
+          <span class="adatok">Akkumulátor kapacitás (mAh, átlagos):</span> 3700
+        </p>
+        <p>
+          <span class="adatok">Tárhely (GB):</span> 256
+        </p>
+        <p>
+          <span class="adatok">Méretek (Ma x Szé x Mé, mm):</span> 165.2 x 71.9 x 6.9
+        </p>
+        <p>
+          <span class="adatok">Súly (g):</span> 187
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+        <a target="_blank" href="https://www.samsung.com/hu/smartphones/galaxy-z-flip4/buy/">
+          <img class="okostelefonokkiskep" src="files/photos/zflip.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+        </a>
+      </div>
+    </div>
+    <!-- Galaxy Z Flip4 -->
+    </div>
+    <!-- tartalom -->
+    <script src="files/bootstrap.bundle.min.js">
+
+    </script>
 </body>
 </html>
