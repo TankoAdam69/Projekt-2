@@ -23,10 +23,6 @@
     font-size: 15px;
 }
 
-a{
-    color: black !important;
-}
-
 .carousel-control-prev-icon.bg-dark{
     border-radius: 10px;
 }
@@ -685,4 +681,17 @@ table tr td{
 .haz .nav-item button:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px #000;
+}
+
+.kozepre {
+    text-align: center;
+}
+
+.szeria {
+    font-size: 70px;
+    margin-bottom: 30px;
 }
