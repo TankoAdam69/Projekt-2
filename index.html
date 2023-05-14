@@ -9,27 +9,34 @@
     <link rel="stylesheet" href="files/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg samsungmedium">
-        <div class="container d-block text-center">
-            <a href="." class="navbar-brand">
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav">
-                    <a href="index.html"><img src="files/oldal_logo.png" class="float-start" style="padding-top: 4px"></a>
-                    <a href="mobil.html" class="nav-link">Okostelefonok</a>
-                    <a href="tabletek.html" class="nav-link">Tabletek</a>
-                    <a href="tv.html" class="nav-link">Tv-k és audió</a>
-                    <a href="monitorok.html" class="nav-link">Monitorok</a>
-                    <a href="haztartas.html" class="nav-link">Háztartási gépek</a>
-                    <a href="tartozekok.html" class="nav-link">Tartozékok</a>
-                    <a href="ugyfel.html" class="nav-link">Ügyfélszolgálat</a>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
+<body class="home">
+    <nav class="container navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav> 
+      </nav>
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -38,7 +45,7 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-secondary third" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="bg-secondary forth" aria-label="Slide 4"></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="c0 carousel-inner">
                     <div class="carousel-item active c1">
                         <img src="files/photos/home_1.png" class="d-block w-100">
                         <div class="carousel-caption">
@@ -105,7 +112,7 @@
                 <img src="files/photos/home1_3.png" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title text-black">Galaktikus Ajánlatok</h5>
-                    <a href="galaktikus.html" target="_blank" class="btn btn-dark cr1 text-light">Bővebben</a>
+                    <a href="galaktikus.html" target="_parent" class="btn btn-dark cr1 text-light">Bővebben</a>
                 </div>
             </div>
         <div class="col-3">
@@ -141,7 +148,7 @@
                 <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Galaxy Watch5</button>
             </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content t1" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                 <a href="samsungs23.html"><img src="files/photos/home2_1.jpg"><h5 class="pt-3">Galaxy S23</h5></a>
             </div>
@@ -169,7 +176,7 @@
                 <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contac" type="button" role="tab" aria-controls="pills-contac" aria-selected="false">OLED</button>
             </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content t1" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-hom" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                 <a href="tv.html"><img src="files/photos/home3_1.jpg"><h5 class="pt-3">Neo OLED 8K</h5></a>
             </div>
@@ -197,7 +204,7 @@
                 <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disable" type="button" role="tab" aria-controls="pills-disable" aria-selected="false">Samsung Jet Bot<sup>TM</sup></button>
             </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content t1" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-ho" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                 <a href="haztartas.html"><img src="files/photos/home4_1.webp"><h5 class="pt-3">BESPOKE Jet<sup>TM</sup></h5></a>
             </div>
@@ -213,8 +220,6 @@
         </div>
     </div>
     </div>
-
-
 <script src="script.js"></script>
 <script src="files/bootstrap.bundle.min.js"></script>
 </body>
