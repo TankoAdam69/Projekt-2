@@ -10,44 +10,41 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="container navbar navbar-expand-lg navbar-light bg-white p-4">
+      <div class="container-fluid">
+          <a href="index.html"><img src="files/oldal_logo.png" class="float-start pb-1"
+              style="padding-top: 4px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                  <a class="nav-link active" href="mobil.html">Okostelefonok</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                  <a class="nav-link" href="tabletek.html">Tabletek</a>
               </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+              <li class="nav-item">
+                  <a class="nav-link" href="tv.html">Tv-k és audió</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="monitorok.html">Monitorok</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="haztartas.html">Háztartási gépek</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tartozekok.html">Tartozékok</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="ugyfel.html">Ügyfélszolgálat</a>
+              </ul>
           </div>
-        </div>
+      </div>
     </nav>
 <!-- okostelefonfo -->
-<div class="okostelefonfo">
+<div class="container okostelefonfo">
   <!-- <h1 class="foszvg">Okostelefonok</h1> -->
       <div class="row">
           <div class="col">
@@ -71,7 +68,9 @@
                       <div style="color: white;" class="carousel-caption d-none d-md-block">
                         <h1 class="text-shadow">Samsung galaxy a modell</h1>
                         <p class="text-shadow">Tekintse meg új modelleinket.</p>
+                        <a href="#amodell">
                         <button class="btn btn-primary">Megnézem!</button>
+                        </a>
                       </div>
                     </div>
                     <div class="carousel-item c-item">
@@ -79,7 +78,9 @@
                       <div style="color: white;" class="carousel-caption d-none d-md-block">
                         <h1 class="text-shadow">Samsung galaxy z modell</h1>
                         <p class="text-shadow">Tekintse meg új modelleinket.</p>
+                        <a href="#zmodell">
                         <button class="btn btn-primary">Megnézem!</button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -97,13 +98,13 @@
   </div>
   <!-- okostelefonfo -->
     <!-- tartalom -->
-    <div>
+    <div class="container">
       <div>
-        <h1 class="kozepre szeria">Samsung galaxy S széria:</h1>
+        <h1 id="smodell" class="kozepre szeria">Samsung galaxy S széria:</h1>
       </div>
     <!-- s23 -->
         <div class="row hatter">
-          <h2 id="smodell" class="focim">Samsung Galaxy S23</h2>
+          <h2 class="focim">Samsung Galaxy S23</h2>
           <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
             <h3 class="ujcim">Újdonság az előző modellhez képest:</h3>
             <p>
@@ -225,7 +226,7 @@
     </div>
     <!-- s23 Ultra -->
     <div>
-      <h1 class="kozepre szeria">Samsung galaxy A széria:</h1>
+      <h1 id="amodell" class="kozepre szeria">Samsung galaxy A széria:</h1>
     </div>
     <!-- Galaxy A53 5G -->
     <div class="row">
@@ -269,7 +270,7 @@
     </div>
     <!-- Galaxy A53 5G -->
     <div>
-      <h1 class="kozepre szeria">Samsung galaxy Z széria:</h1>
+      <h1 id="zmodell" class="kozepre szeria">Samsung galaxy Z széria:</h1>
     </div>
     <!-- Galaxy Z Fold4 -->
     <div class="row hatter">

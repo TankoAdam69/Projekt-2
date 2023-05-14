@@ -8,47 +8,44 @@
     <link rel="stylesheet" href="files/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="container">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="container navbar navbar-expand-lg navbar-light bg-white p-4">
+      <div class="container-fluid">
+          <a href="index.html"><img src="files/oldal_logo.png" class="float-start pb-1"
+              style="padding-top: 4px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                  <a class="nav-link active" href="mobil.html">Okostelefonok</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                  <a class="nav-link" href="tabletek.html">Tabletek</a>
               </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+              <li class="nav-item">
+                  <a class="nav-link" href="tv.html">Tv-k és audió</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="monitorok.html">Monitorok</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="haztartas.html">Háztartási gépek</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tartozekok.html">Tartozékok</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="ugyfel.html">Ügyfélszolgálat</a>
+              </ul>
           </div>
-        </div>
-      </nav>
+      </div>
+    </nav>
     <!-- navbar -->
     <!-- okostelefonfo -->
-    <div class="okostelefonfo">
+    <div class="container okostelefonfo">
         <!-- <h1 class="foszvg">Okostelefonok</h1> -->
             <div class="row">
                 <div class="col">
@@ -62,25 +59,31 @@
                           <div class="carousel-item active c-item">
                             <img src="files/photos/Odyssey_G72.jpg" class="d-block w-100 c-img" alt="Első carousel kép">
                             <div style="color: white;" class="carousel-caption d-none d-md-block">
-                              <h1 class="text-shadow">Samsung galaxy s modell</h1>
+                              <h1 class="text-shadow">Gaming monitorok</h1>
                               <p class="text-shadow">Tekintse meg új modelleinket.</p>
-                              <a class="test" href="#smodell"><button class="btn btn-primary">Megnézem!</button></a>
+                              <a class="test" href="#gaming">
+                                <button class="btn btn-primary">Megnézem!</button>
+                              </a>
                             </div>
                           </div>
                           <div class="carousel-item c-item">
-                            <img src="files/photos/galaxya.jpg" class="d-block w-100 c-img" alt="Második carousel kép">
+                            <img src="files/photos/monitorc2.jpg" class="d-block w-100 c-img" alt="Második carousel kép">
                             <div style="color: white;" class="carousel-caption d-none d-md-block">
                               <h1 class="text-shadow">Samsung galaxy a modell</h1>
                               <p class="text-shadow">Tekintse meg új modelleinket.</p>
-                              <button class="btn btn-primary">Megnézem!</button>
+                              <a href="#uzleti">
+                                <button class="btn btn-primary">Megnézem!</button>
+                              </a>
                             </div>
                           </div>
                           <div class="carousel-item c-item">
-                            <img src="files/photos/galaxyz.jpg" class="d-block w-100 c-img" alt="Harmadik carousel kép">
+                            <img src="files/photos/monitorc34.jpg" class="d-block w-100 c-img" alt="Harmadik carousel kép">
                             <div style="color: white;" class="carousel-caption d-none d-md-block">
                               <h1 class="text-shadow">Samsung galaxy z modell</h1>
                               <p class="text-shadow">Tekintse meg új modelleinket.</p>
-                              <button class="btn btn-primary">Megnézem!</button>
+                              <a href="#smart">
+                                <button class="btn btn-primary">Megnézem!</button>
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -99,7 +102,7 @@
     </nav>
 
     <div>
-      <h1 class="kozepre szeria">Gaming:</h1>
+      <h1 id="gaming" class="kozepre szeria">Gaming:</h1>
     </div>
     <!-- Samsung Odyssey G7 -->
     <div class="row hatter">
@@ -139,14 +142,14 @@
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
         <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-g7-27-inch-240hz-1ms-curved-lc27g75tqspxen/">
-          <img class="okostelefonokkiskep" src="files/photos/Odyssey_G7.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+          <img class="okostelefonokkiskep" src="files/photos/Odyssey_G7.jpg" alt="Samsung Odyssey G7 kép" title="Samsung Odyssey G7">
         </a>
       </div>
     </div>
     <!-- Samsung Odyssey G7 -->
     <!-- Samsung Odyssey G9 -->
     <div class="row">
-      <h2 id="smodell" class="focim">Samsung Odyssey G9</h2>
+      <h2 class="focim">Samsung Odyssey G9</h2>
       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
         <h3 class="ujcim">A monitor egyik különlegessége:</h3>
         <p>
@@ -182,13 +185,13 @@
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
         <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-oled-g9-g95sc-49-inch-240hz-curved-dual-qhd-ls49cg950suxdu/">
-          <img class="okostelefonokkiskep" src="files/photos/Odyssey_G9.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+          <img class="okostelefonokkiskep" src="files/photos/Odyssey_G9.jpg" alt="Samsung Odyssey G9 kép" title="Samsung Odyssey G9">
         </a>
       </div>
     </div>
     <!-- Samsung Odyssey G9 -->
     <div>
-      <h1 class="kozepre szeria">Üzleti:</h1>
+      <h1 id="uzleti" class="kozepre szeria">Üzleti:</h1>
     </div>
     <!-- Samsung F32TU870VR -->
     <div class="row hatter">
@@ -228,12 +231,12 @@
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
         <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-g7-27-inch-240hz-1ms-curved-lc27g75tqspxen/">
-          <img class="okostelefonokkiskep" src="files/photos/F32TU870VR.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+          <img class="okostelefonokkiskep" src="files/photos/F32TU870VR.jpg" alt="Samsung F32TU870VR kép" title="Samsung F32TU870VR">
         </a>
       </div>
     </div>
-    <!-- Samsung Odyssey G7 -->
-    <!-- Samsung Odyssey G9 -->
+    <!-- Samsung F32TU870VR -->
+    <!-- Samsung F24T450FQR -->
     <div class="row">
       <h2 id="smodell" class="focim">Samsung F24T450FQR</h2>
       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
@@ -271,13 +274,13 @@
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
         <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-oled-g9-g95sc-49-inch-240hz-curved-dual-qhd-ls49cg950suxdu/">
-          <img class="okostelefonokkiskep" src="files/photos/F24T450FQR.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+          <img class="okostelefonokkiskep" src="files/photos/F24T450FQR.jpg" alt="Samsung F24T450FQR kép" title="Samsung F24T450FQR">
         </a>
       </div>
     </div>
-    <!-- Samsung Odyssey G9 -->
+    <!-- Samsung F24T450FQR -->
     <div>
-      <h1 class="kozepre szeria">Smart:</h1>
+      <h1 id="smart" class="kozepre szeria">Smart:</h1>
     </div>
     <!-- Samsung S32BM801UU Smart M8  -->
     <div class="row hatter">
@@ -316,7 +319,7 @@
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
         <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-g7-27-inch-240hz-1ms-curved-lc27g75tqspxen/">
-          <img class="okostelefonokkiskep" src="files/photos/S32BM801UU.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+          <img class="okostelefonokkiskep" src="files/photos/S32BM801UU.jpg" alt="Samsung S32BM801UU Smart M8 kép" title="Samsung S32BM801UU Smart M8">
         </a>
       </div>
     </div>
@@ -359,7 +362,7 @@
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
         <a target="_blank" href="https://www.samsung.com/hu/monitors/gaming/odyssey-oled-g9-g95sc-49-inch-240hz-curved-dual-qhd-ls49cg950suxdu/">
-          <img class="okostelefonokkiskep" src="files/photos/S32BM701UU.jpg" alt="Samsung galaxy s23 Ultra kép" title="Samsung galaxy s23 Ultra">
+          <img class="okostelefonokkiskep" src="files/photos/S32BM701UU.jpg" alt="Samsung S32BM701UU Smart M7 kép" title="Samsung S32BM701UU Smart M7">
         </a>
       </div>
     </div>
