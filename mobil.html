@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                  <a class="nav-link active" href="mobil.html">Okostelefonok</a>
+                  <a class="nav-link" href="mobil.html">Okostelefonok</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="tabletek.html">Tabletek</a>
@@ -39,11 +39,85 @@
                   <a class="nav-link" href="tartozekok.html">Tartozékok</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="ugyfel.html">Ügyfélszolgálat</a>
+                <a class="nav-link" href="adathordozok.html">Adathordozók</a>
+            </li>
               </ul>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Kapcsolatfelvétel
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Ügyfélszolgálat</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                      <div class="form">
+                          <form action="post">
+                              <div class="field-holder">
+                                  <input class="ms-3 me-4 mb-3" type="text" id="fname" required>
+                                  <label for="fname">Vezetéknév</label>
+                              </div>
+                              <div class="field-holder">
+                                  <input class="ms-3 me-3 mb-3" type="text" id="kname" required>
+                                  <label for="kname">Keresztnév</label>
+                              </div>
+                              <div class="field-holder">
+                                  <input class="ms-3 me-4 mb-3" type="e-mail" id="e-mail">
+                                  <label for="e-mail">E-mail</label>
+                              </div>
+                              <div class="field-holder">
+                                  <input class="ms-3 me-3 mb-3" type="phone" id="phone" required>
+                                  <label for="phone">Telefon</label>
+                              </div>
+                              <p>Termékérdeklődés:</p>
+                              <div class="row ps-1 text-center">
+                                  <div class="col-6">
+                                      <input type="radio" id="mobil" name="fav_language" value="mobil">
+                                      <label for="mobil">Mobil</label>
+                                      <br>
+                                      <input type="radio" id="kijelzo" name="fav_language" value="kijelzo">
+                                      <label for="kijelzo">Kijelzők</label>
+                                      <br>
+                                      <input type="radio" id="klima" name="fav_language" value="klima">
+                                      <label for="klima">Klíma</label>
+                                  </div>
+                                  <div class="col-6 pb-3">
+                                      <input type="radio" id="szamitastechnika" name="fav_language" value="szamitastechnika">
+                                      <label for="szamitastechnika">Számítástechnika</label>
+                                      <br>
+                                      <input type="radio" id="haztartasigep" name="fav_language" value="haztartasigep">
+                                      <label for="haztartasigep">Háztartási gépek</label>
+                                      <br>
+                                      <input type="radio" id="memoria" name="fav_language" value="memoria">
+                                      <label for="memoria">Memória</label>
+                                  </div>
+                              </div>
+                              <div class="field-holder">
+                                  <input class="ms-3 me-4 mb-3" type="e-mail" id="ir" required>
+                                  <label for="ir">Irányítószá</label>
+                              </div>
+                              <div class="field-holder">
+                                  <input class="ms-3 me-3 mb-3" type="phone" id="va" required>
+                                  <label for="va">Város</label>
+                              </div>
+                              <div class="ps-4">
+                                  <textarea cols="46" rows="5" placeholder="Üzenet"></textarea>
+                              </div>
+                          </form>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" id="s"  onclick="myFunction()">Jóváhagyás</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
           </div>
       </div>
-    </nav>
+  </nav>
 <!-- okostelefonfo -->
 <div class="container okostelefonfo">
   <!-- <h1 class="foszvg">Okostelefonok</h1> -->
